@@ -245,6 +245,18 @@
   </url>
   
   <url>
+    <loc>https://sjtug.org/post/mirror-help/homebrew-cask/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sjtug.org/post/mirror-help/homebrew-core/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sjtug.org/post/mirror-help/homebrew-bottles/</loc>
+  </url>
+  
+  <url>
     <loc>https://sjtug.org/post/mirror-help/kali/</loc>
   </url>
   
@@ -262,6 +274,14 @@
   
   <url>
     <loc>https://sjtug.org/post/mirror-help/pypi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sjtug.org/post/mirror-help/raspberrypi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sjtug.org/post/mirror-help/raspbian/</loc>
   </url>
   
   <url>

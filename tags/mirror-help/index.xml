@@ -233,6 +233,71 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
     </item>
     
     <item>
+      <title>git/homebrew-cask.git</title>
+      <link>https://sjtug.org/post/mirror-help/homebrew-cask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/homebrew-cask/</guid>
+      <description>&lt;p&gt;homebrew-cask.git镜像了&lt;a href=&#34;https://github.com/Homebrew/homebrew-cask.git&#34;&gt;Homebrew Cask的描述文件，主要包括了较大的二进制文件与macOS应用&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SJTUG镜像同时也提供了&lt;code&gt;homebrew-core&lt;/code&gt;和&lt;code&gt;brew-bottles&lt;/code&gt;镜像，欢迎大家使用。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd &amp;quot;$(brew --repo)&amp;quot;/Library/Taps/caskroom/homebrew-cask
+git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-cask.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;brew update
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>git/homebrew-core.git</title>
+      <link>https://sjtug.org/post/mirror-help/homebrew-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/homebrew-core/</guid>
+      <description>&lt;p&gt;homebrew-core.git镜像了&lt;a href=&#34;https://github.com/Homebrew/homebrew-core.git&#34;&gt;Homebrew官方的软件包描述文件&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SJTUG镜像同时也提供了&lt;code&gt;homebrew-cask&lt;/code&gt;和&lt;code&gt;brew-bottles&lt;/code&gt;镜像，欢迎大家使用。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd &amp;quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&amp;quot;
+git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;brew update
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>homebrew-bottles</title>
+      <link>https://sjtug.org/post/mirror-help/homebrew-bottles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/homebrew-bottles/</guid>
+      <description>&lt;p&gt;homebrew-bottles.git镜像了&lt;a href=&#34;https://homebrew.bintray.com/&#34;&gt;预编译的 Homebrew 软件包&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SJTUG镜像同时也提供了&lt;code&gt;homebrew-core&lt;/code&gt;和&lt;code&gt;homebrew-cask&lt;/code&gt;镜像，欢迎大家使用。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;p&gt;执行以下语句或加入到&lt;code&gt;~/.bashrc&lt;/code&gt;中。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.sjtug.sjtu.edu.cn/homebrew-bottles
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>kali</title>
       <link>https://sjtug.org/post/mirror-help/kali/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -329,6 +394,40 @@ registry=https://mirrors.sjtug.sjtu.edu.cn/npm-registry
 index-url = https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
 format = columns
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>raspberrypi</title>
+      <link>https://sjtug.org/post/mirror-help/raspberrypi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/raspberrypi/</guid>
+      <description>&lt;p&gt;raspberrypi是树莓派基金会提供的软件源，包括 ui 相关程序及部分由树莓派基金会为树莓派编写的软件。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;将&lt;code&gt;/etc/apt/raspi.list&lt;/code&gt;中的&lt;code&gt;http://archive.raspberrypi.org/debian/&lt;/code&gt;更换成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspberrypi/debian/&lt;/code&gt;。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>raspbian</title>
+      <link>https://sjtug.org/post/mirror-help/raspbian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/raspbian/</guid>
+      <description>&lt;p&gt;Raspbian是为树莓派设计，基于Debian的操作系统。本镜像提供了Raspbian的官方软件源与光盘镜像。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;更换软件源：&lt;/p&gt;
+
+&lt;p&gt;编辑&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将所有的&lt;code&gt;deb&lt;/code&gt;与&lt;code&gt;deb-src&lt;/code&gt;之后的网址替换成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspbian/raspbian/&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;下载ISO镜像：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspbian/images/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/raspbian/images/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
