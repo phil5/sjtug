@@ -407,7 +407,7 @@ format = columns
 
 &lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;将&lt;code&gt;/etc/apt/raspi.list&lt;/code&gt;中的&lt;code&gt;http://archive.raspberrypi.org/debian/&lt;/code&gt;更换成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspberrypi/debian/&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;/etc/apt/sources.list.d/raspi.list&lt;/code&gt;中的&lt;code&gt;http://archive.raspberrypi.org/debian/&lt;/code&gt;更换成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspberrypi/debian/&lt;/code&gt;。&lt;/p&gt;
 </description>
     </item>
     
