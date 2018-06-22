@@ -6,10 +6,22 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Jun 2018 19:35:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 15:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增homebrew与raspbian/raspberrypi镜像</title>
+      <link>https://sjtug.org/post/mirror-news/2018-06-15-raspbian-homebrew/</link>
+      <pubDate>Fri, 15 Jun 2018 15:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2018-06-15-raspbian-homebrew/</guid>
+      <description>&lt;p&gt;新增了MacOS的homebrew包管理器与适用于树莓派的raspbian/raspberrypi仓库的镜像。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家查看&lt;code&gt;git/homebrew-{core/cask}.git&lt;/code&gt;、&lt;code&gt;homebrew-bottles&lt;/code&gt;与&lt;code&gt;raspbian&lt;/code&gt;/&lt;code&gt;raspberrypi&lt;/code&gt;了解如何使用。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SJTUG 2018 暑期课堂预告</title>
