@@ -889,6 +889,16 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
     </item>
     
     <item>
+      <title>git/brew.git</title>
+      <link>https://sjtug.org/post/mirror-help/brew-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/brew-git/</guid>
+      <description>&lt;p&gt;本镜像是 Homebrew 自身的仓库，上游为&lt;code&gt;https://github.com/Homebrew/brew.git&lt;/code&gt;。在&lt;code&gt;git&lt;/code&gt;相关操作时使用&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/git/brew.git&lt;/code&gt;替代上述地址即可。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>git/homebrew-cask.git</title>
       <link>https://sjtug.org/post/mirror-help/homebrew-cask/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
