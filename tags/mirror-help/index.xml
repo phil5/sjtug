@@ -254,7 +254,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
 
 &lt;p&gt;使用方法：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd &amp;quot;$(brew --repo)&amp;quot;/Library/Taps/caskroom/homebrew-cask
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd &amp;quot;$(brew --repo)&amp;quot;/Library/Taps/homebrew/homebrew-cask
 git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-cask.git
 &lt;/code&gt;&lt;/pre&gt;
 
