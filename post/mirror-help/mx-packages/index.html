@@ -78,15 +78,20 @@
 
 <p>使用方法：</p>
 
-<p>打开<code>/etc/apt/sources.list</code>，将</p>
+<ul>
+<li><p>（推荐）打开MX Repo Manager，选择SJTUG mirror</p></li>
 
-<pre><code>deb http://mxrepo.com/mx/repo/ mx17 non-free main
+<li><p>（手动）：
+打开<code>/etc/apt/sources.list</code>，将</p>
+
+<pre><code>deb http://mxrepo.com/mx/repo/ stretch non-free main
 deb http://mxrepo.com/mx/testrepo/ mx7 test
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>替换成</p>
 
-<pre><code>deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/repo main non-free
+<pre><code>deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/repo stretch main non-free
 deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/testrepo test
 </code></pre>
 

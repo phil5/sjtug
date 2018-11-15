@@ -376,15 +376,20 @@ deb-src https://mirrors.sjtug.sjtu.edu.cn/kali kali-rolling main non-free contri
 
 &lt;p&gt;使用方法：&lt;/p&gt;
 
-&lt;p&gt;打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;（推荐）打开MX Repo Manager，选择SJTUG mirror&lt;/p&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;deb http://mxrepo.com/mx/repo/ mx17 non-free main
+&lt;li&gt;&lt;p&gt;（手动）：
+打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb http://mxrepo.com/mx/repo/ stretch non-free main
 deb http://mxrepo.com/mx/testrepo/ mx7 test
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;替换成&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/repo main non-free
+&lt;pre&gt;&lt;code&gt;deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/repo stretch main non-free
 deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/testrepo test
 &lt;/code&gt;&lt;/pre&gt;
 </description>
