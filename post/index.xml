@@ -1007,6 +1007,46 @@ deb-src https://mirrors.sjtug.sjtu.edu.cn/kali kali-rolling main non-free contri
     </item>
     
     <item>
+      <title>mx-isos</title>
+      <link>https://sjtug.org/post/mirror-help/mx-isos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/mx-isos/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mxlinux.org/&#34;&gt;MX Linux&lt;/a&gt; 是一个基于Debian 稳定分支的面向桌面的Linux发行，它是antiX 及早先的MEPIS 社区合作的产物。它采用Xfce 作为缺省桌面，是一个轻量级操作系统。&lt;/p&gt;
+
+&lt;p&gt;本Repo镜像了MX Linux和AntiX的安装镜像。具体信息可以参见 &lt;a href=&#34;https://mxlinux.org/wiki/system/iso-download-mirrors&#34;&gt;https://mxlinux.org/wiki/system/iso-download-mirrors&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;p&gt;本站另有&lt;code&gt;mx-packages&lt;/code&gt;镜像，包括了MX Linux与AntiX的软件包，欢迎大家使用。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>mx-packages</title>
+      <link>https://sjtug.org/post/mirror-help/mx-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/mx-packages/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mxlinux.org/&#34;&gt;MX Linux&lt;/a&gt; 是一个基于Debian 稳定分支的面向桌面的Linux发行，它是antiX 及早先的MEPIS 社区合作的产物。它采用Xfce 作为缺省桌面，是一个轻量级操作系统。&lt;/p&gt;
+
+&lt;p&gt;本Repo镜像了MX Linux和AntiX的软件包。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;p&gt;打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb http://mxrepo.com/mx/repo/ mx17 non-free main
+deb http://mxrepo.com/mx/testrepo/ mx7 test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;替换成&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/repo main non-free
+deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/testrepo test
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>npm-registry</title>
       <link>https://sjtug.org/post/mirror-help/npm-registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
