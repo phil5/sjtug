@@ -6,10 +6,20 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Nov 2018 11:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 05:55:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>镜像站11/22 6:31开始服务暂时不可用</title>
+      <link>https://sjtug.org/post/mirror-news/2018-11-22-outage/</link>
+      <pubDate>Thu, 22 Nov 2018 05:55:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2018-11-22-outage/</guid>
+      <description>&lt;p&gt;镜像站在11/22早6:31开始，服务暂时不可用，目前我们正在调查原因。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站将在 11/22 凌晨3时 UTC&#43;8维护</title>
