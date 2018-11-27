@@ -396,6 +396,21 @@ deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/testrepo test
     </item>
     
     <item>
+      <title>nodejs-release</title>
+      <link>https://sjtug.org/post/mirror-help/nodejs-release/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/nodejs-release/</guid>
+      <description>&lt;p&gt;本链接反代了 &lt;a href=&#34;https://nodejs.org/dist/&#34;&gt;https://nodejs.org/dist/&lt;/a&gt; 。可以在此手动下载Nodejs的安装包，也可以配合Nodejs环境使用：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt;：&lt;code&gt;export NODE_MIRROR=https://mirrors.sjtug.sjtu.edu.cn/nodejs-release/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nvm&lt;/code&gt;：&lt;code&gt;export NVM_NODEJS_ORG_MIRROR=https://mirrors.sjtug.sjtu.edu.cn/nodejs-release&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>npm-registry</title>
       <link>https://sjtug.org/post/mirror-help/npm-registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
