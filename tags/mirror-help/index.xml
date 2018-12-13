@@ -41,6 +41,7 @@
 &lt;li&gt;&lt;code&gt;cloud/matsci&lt;/code&gt;: &lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/matsci&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: `&lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/menpo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: `&lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/soumith&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

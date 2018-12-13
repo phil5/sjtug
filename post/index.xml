@@ -6,10 +6,24 @@
     <description>Recent content in Posts on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Nov 2018 05:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Dec 2018 19:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SJTUG 技术分享：C&#43;&#43;中的运行期与编译期多态</title>
+      <link>https://sjtug.org/post/2018-12-15-polymorphism-in-cpp/</link>
+      <pubDate>Sat, 08 Dec 2018 19:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/2018-12-15-polymorphism-in-cpp/</guid>
+      <description>&lt;p&gt;下周六（15日）晚 19:00 将在 李政道图书馆 209 进行 SJTUG 技术分享，欢迎大家带电脑前来参加。本次分享内容为：&lt;/p&gt;
+
+&lt;p&gt;C++中的运行期与编译期多态 (Runtime and Compile-Time Polymorphism) in C++ @ 任云玮&lt;/p&gt;
+
+&lt;p&gt;届时会通过 teamviewer、&lt;a href=&#34;https://live.bilibili.com/6254516&#34;&gt;bilibili 直播间&lt;/a&gt; 等进行现场直播，slides 会上传到 &lt;a href=&#34;https://github.com/sjtug/sharing&#34;&gt;https://github.com/sjtug/sharing&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站11/22 6:31开始服务暂时不可用</title>
@@ -717,6 +731,7 @@ UPDATE(07-01)：更新第二周主题&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;cloud/matsci&lt;/code&gt;: &lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/matsci&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: `&lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/menpo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: `&lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/soumith&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
