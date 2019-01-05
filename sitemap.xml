@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sjtug.org/post/mirror-news/2019-01-04-outage/</loc>
+    <lastmod>2019-01-04T20:30:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sjtug.org/post/2018-12-15-polymorphism-in-cpp/</loc>
     <lastmod>2018-12-08T19:00:00+08:00</lastmod>
   </url>
@@ -192,7 +197,7 @@
   
   <url>
     <loc>https://sjtug.org/tags/mirror-news/</loc>
-    <lastmod>2018-11-22T05:55:00+08:00</lastmod>
+    <lastmod>2019-01-04T20:30:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -204,13 +209,13 @@
   
   <url>
     <loc>https://sjtug.org/post/</loc>
-    <lastmod>2018-12-08T19:00:00+08:00</lastmod>
+    <lastmod>2019-01-04T20:30:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjtug.org/</loc>
-    <lastmod>2018-12-08T19:00:00+08:00</lastmod>
+    <lastmod>2019-01-04T20:30:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   

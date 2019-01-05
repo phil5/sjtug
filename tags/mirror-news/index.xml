@@ -6,10 +6,20 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Nov 2018 05:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 20:30:00 -0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>镜像站已于01/05恢复正常</title>
+      <link>https://sjtug.org/post/mirror-news/2019-01-04-outage/</link>
+      <pubDate>Fri, 04 Jan 2019 20:30:00 -0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2019-01-04-outage/</guid>
+      <description>&lt;p&gt;由于网页服务器异常crash，镜像站于1月4日14时到5日3时期间无法正常访问。目前已经修复，欢迎大家继续使用。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站11/22 6:31开始服务暂时不可用</title>
