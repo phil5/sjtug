@@ -6,10 +6,24 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Mar 2019 20:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 19:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SJTUG 技术分享：任务型对话概览</title>
+      <link>https://sjtug.org/post/2019-04-01-task-oriented-dialogue/</link>
+      <pubDate>Mon, 01 Apr 2019 19:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/2019-04-01-task-oriented-dialogue/</guid>
+      <description>&lt;p&gt;周一（4月1日）晚 19:00 将在 图书馆主馆 E312 进行 SJTUG 技术分享，欢迎大家带电脑前来参加。本次分享内容为：&lt;/p&gt;
+
+&lt;p&gt;任务型对话概览 @ 刘啸远&lt;/p&gt;
+
+&lt;p&gt;届时会通过 teamviewer、&lt;a href=&#34;https://live.bilibili.com/6254516&#34;&gt;bilibili 直播间&lt;/a&gt; 等进行现场直播，slides 会上传到 &lt;a href=&#34;https://github.com/sjtug/sharing&#34;&gt;https://github.com/sjtug/sharing&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站已支持TLS v1.3访问</title>
