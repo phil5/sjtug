@@ -1014,6 +1014,26 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
     </item>
     
     <item>
+      <title>google-fonts</title>
+      <link>https://sjtug.org/post/mirror-help/google-fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/google-fonts/</guid>
+      <description>&lt;p&gt;本镜像提供了 Google Fonts 的反向代理。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Roboto&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;改为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link href=&amp;quot;https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Roboto&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>homebrew-bottles</title>
       <link>https://sjtug.org/post/mirror-help/homebrew-bottles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
