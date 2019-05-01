@@ -458,6 +458,28 @@ registry=https://mirrors.sjtug.sjtu.edu.cn/npm-registry
     </item>
     
     <item>
+      <title>packagist</title>
+      <link>https://sjtug.org/post/mirror-help/packagist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/packagist/</guid>
+      <description>&lt;p&gt;Packagist 是 PHP 包管理软件 Composer 的源。本镜像仅包含所有包的 metadata，并非全量同步镜像。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;全局设置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;composer config -g repo.packagist composer https://packagist.mirrors.sjtug.sjtu.edu.cn
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者仅对一个项目设置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;composer config repo.packagist composer https://packagist.mirrors.sjtug.sjtu.edu.cn
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>parrot</title>
       <link>https://sjtug.org/post/mirror-help/parrot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
