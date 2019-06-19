@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sjtug.org/post/mirror-news/2019-06-19-maintain/</loc>
+    <lastmod>2019-06-19T13:51:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sjtug.org/post/2019-04-01-task-oriented-dialogue/</loc>
     <lastmod>2019-04-01T19:00:00+08:00</lastmod>
   </url>
@@ -30,11 +35,6 @@
   <url>
     <loc>https://sjtug.org/post/mirror-news/2018-11-20-maintain/</loc>
     <lastmod>2018-11-20T11:55:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sjtug.org/post/mirror-news/2019-06-19-maintain/</loc>
-    <lastmod>2018-06-19T13:51:00-07:00</lastmod>
   </url>
   
   <url>
@@ -212,7 +212,7 @@
   
   <url>
     <loc>https://sjtug.org/tags/mirror-news/</loc>
-    <lastmod>2019-03-06T20:00:00-08:00</lastmod>
+    <lastmod>2019-06-19T13:51:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -224,13 +224,13 @@
   
   <url>
     <loc>https://sjtug.org/post/</loc>
-    <lastmod>2019-04-01T19:00:00+08:00</lastmod>
+    <lastmod>2019-06-19T13:51:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjtug.org/</loc>
-    <lastmod>2019-04-01T19:00:00+08:00</lastmod>
+    <lastmod>2019-06-19T13:51:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
