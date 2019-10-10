@@ -6,10 +6,20 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Jun 2019 13:51:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 22:23:00 -0700</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pypi镜像源改为反代</title>
+      <link>https://sjtug.org/post/mirror-news/2019-10-09-remove-pypi/</link>
+      <pubDate>Wed, 09 Oct 2019 22:23:00 -0700</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2019-10-09-remove-pypi/</guid>
+      <description>&lt;p&gt;由于PyPI镜像占用空间过大，经过权衡我们决定放弃PyPI的全量镜像。出于兼容性考虑，&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/pypi/web&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/pypi/web&lt;/a&gt; 现在反代 &lt;a href=&#34;https://pypi.org&#34;&gt;https://pypi.org&lt;/a&gt; （与原有URL相同，已有用户不必进行更改）。有需要的用户可以迁移到其他镜像或继续使用反代服务。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站将于21日凌晨2点维护</title>
