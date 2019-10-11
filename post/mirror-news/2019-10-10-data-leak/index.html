@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>sjtug.org写作指南 &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>关于19年10月软件源日志泄漏的通告 &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,9 +52,9 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>sjtug.org写作指南</h1>
+                    <h1>关于19年10月软件源日志泄漏的通告</h1>
                     <h2 class="headline">
-                    January 15, 2017 
+                    October 10, 2019 
                     
                         <br>
                         <i class="fa fa-user" aria-hidden="true"></i> htfy96
@@ -64,7 +64,7 @@
                     
                     
                         
-                            <a href="https://sjtug.org/tags/guide">guide</a>
+                            <a href="https://sjtug.org/tags/mirror-news">mirror-news</a>
                         
                     
                     
@@ -74,35 +74,26 @@
                 <section id="post-body">
                     
 
-<p>这里介绍了一下发布新文章的步骤</p>
+<h1 id="发生了什么">发生了什么</h1>
 
-<h2 id="安装hugo-或直接新建文章">安装Hugo, 或直接新建文章</h2>
+<p>由于镜像状态页面的Access Token未被合理限权，未授权外部用户可以查看软件源的所有日志。</p>
 
-<p>安装<code>hugo</code>然后<code>hugo new post/YYYY-MM-DD-article-title.md</code>；或直接新建<code>content/post/YYYY-MM-DD-article-title.md</code>，手动指定<code>date</code></p>
+<h1 id="范围">范围</h1>
 
-<p>软件源新闻放在<code>content/post/mirror-news</code>下面，带上<code>mirror-news</code>的tag。</p>
+<p>2018年4月3日2019年10月10日的日志，其中可能会对用户造成影响的内容包括：用户的IP、访问时间与路径</p>
 
-<p>软件源帮助放在<code>content/post/mirror-help</code>下面，带上<code>mirror-help</code>的tag，title设定成和name相同（注意大小写）。</p>
+<h1 id="目前采取的措施">目前采取的措施</h1>
 
-<h2 id="front-matters">Front matters</h2>
-
-<p>头部<code>+++</code>的front matters部分，可以指定的部分有：</p>
+<p>目前已经此漏洞已被以下措施修复：</p>
 
 <ul>
-<li><code>title = &quot;article title&quot;</code> 必填</li>
-<li><code>author = &quot;htfy96&quot;</code> 必填</li>
-<li><code>tags = [&quot;tag1&quot;, &quot;tag2&quot;]</code> 建议填写，只有包含<code>news</code> tag的文章才会在首页显示，其它常用tag包括<code>announcement</code>, <code>guide</code>, <code>sharing</code>等</li>
-<li><code>activity_time = &quot;2017-01-08T15:00:00+08:00&quot;</code>，格式同date，当有<code>sharing</code>标签时建议填写，代表活动开始时间</li>
-<li><code>activity_place = &quot;Main Library&quot;</code>，同上，代表活动地点</li>
-<li><code>draft = true</code>，当不想立即发布时才填写，默认情况<code>false</code>不用填写</li>
+<li>注销了之前未被限权的Access Token</li>
+<li>更换了日志账户的Account Token</li>
+<li>在完成日志权限模型之前，暂时停止日志上传</li>
+<li>更换了泄漏的代理后端的IP，并换用了随机性更强的域名</li>
 </ul>
 
-<h2 id="测试并提交">测试并提交</h2>
-
-<ul>
-<li>使用<code>hugo server</code>看看最终效果是否理想</li>
-<li>提交到 <a href="https://github.com/sjtug/portal">https://github.com/sjtug/portal</a> ，主页会自动生成到sjtug.org</li>
-</ul>
+<p>之后将会更加审慎处理相关信息的接口，保障数据安全。</p>
 
                 </section>
             </article>
@@ -115,7 +106,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2f2017-01-15-writing-guide%2f - sjtug.org%e5%86%99%e4%bd%9c%e6%8c%87%e5%8d%97 by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-news%2f2019-10-10-data-leak%2f - %e5%85%b3%e4%ba%8e19%e5%b9%b410%e6%9c%88%e8%bd%af%e4%bb%b6%e6%ba%90%e6%97%a5%e5%bf%97%e6%b3%84%e6%bc%8f%e7%9a%84%e9%80%9a%e5%91%8a by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

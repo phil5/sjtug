@@ -6,10 +6,41 @@
     <description>Recent content in Posts on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 09 Oct 2019 22:23:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 19:37:00 -0700</lastBuildDate>
     
         <atom:link href="https://sjtug.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于19年10月软件源日志泄漏的通告</title>
+      <link>https://sjtug.org/post/mirror-news/2019-10-10-data-leak/</link>
+      <pubDate>Thu, 10 Oct 2019 19:37:00 -0700</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2019-10-10-data-leak/</guid>
+      <description>
+
+&lt;h1 id=&#34;发生了什么&#34;&gt;发生了什么&lt;/h1&gt;
+
+&lt;p&gt;由于镜像状态页面的Access Token未被合理限权，未授权外部用户可以查看软件源的所有日志。&lt;/p&gt;
+
+&lt;h1 id=&#34;范围&#34;&gt;范围&lt;/h1&gt;
+
+&lt;p&gt;2018年4月3日2019年10月10日的日志，其中可能会对用户造成影响的内容包括：用户的IP、访问时间与路径&lt;/p&gt;
+
+&lt;h1 id=&#34;目前采取的措施&#34;&gt;目前采取的措施&lt;/h1&gt;
+
+&lt;p&gt;目前已经此漏洞已被以下措施修复：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注销了之前未被限权的Access Token&lt;/li&gt;
+&lt;li&gt;更换了日志账户的Account Token&lt;/li&gt;
+&lt;li&gt;在完成日志权限模型之前，暂时停止日志上传&lt;/li&gt;
+&lt;li&gt;更换了泄漏的代理后端的IP，并换用了随机性更强的域名&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;之后将会更加审慎处理相关信息的接口，保障数据安全。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Pypi镜像源改为反代</title>
