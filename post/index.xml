@@ -834,7 +834,6 @@ UPDATE(07-01)：更新第二周主题&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;cloud/bioconda&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/bioconda&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/conda-forge&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/conda-forge&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/matsci&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/matsci&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/menpo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/soumith&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
@@ -843,6 +842,8 @@ UPDATE(07-01)：更新第二周主题&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;如果您在使用时出现了找不到 &lt;code&gt;.conda&lt;/code&gt; 的&lt;a href=&#34;https://github.com/sjtug/mirror-requests/issues/56&#34;&gt;问题&lt;/a&gt;，请参考&lt;a href=&#34;https://github.com/sjtug/sjtug.github.io/issues/12&#34;&gt;这个解决方案&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;此外，在 Conda 4.7 后，官方的 default 源组默认只包含 main 和 r (windows 会包含 msys2) channel，其他官方源仍支持手动添加。但官方建议不再使用 free channel，详见 &lt;a href=&#34;https://www.anaconda.com/why-we-removed-the-free-channel-in-conda-4-7/&#34;&gt;Why We Removed the “Free” Channel in Conda 4.7&lt;/a&gt;。&lt;/p&gt;
 </description>
     </item>
     
