@@ -112,7 +112,9 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
 
 &lt;p&gt;使用方法：&lt;/p&gt;
 
-&lt;p&gt;打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将类似于&lt;code&gt;http://deb.debian.org/debian/&lt;/code&gt;的地址均替换为&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;先安装 ca-certificates apt-transport-https 保证第三方https源可以使用。&lt;/p&gt;
+
+&lt;p&gt;再打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将类似于&lt;code&gt;http://deb.debian.org/debian/&lt;/code&gt;的地址均替换为&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian&lt;/code&gt;即可。&lt;/p&gt;
 </description>
     </item>
     
@@ -524,7 +526,7 @@ deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ parrot main contrib non-free
 
 &lt;p&gt;使用方法：&lt;/p&gt;
 
-&lt;p&gt;创建或编辑&lt;code&gt;~/.pip/pip.conf&lt;/code&gt;文件，加入或修改&lt;code&gt;index-url&lt;/code&gt;相关段落为：&lt;/p&gt;
+&lt;p&gt;创建或编辑&lt;code&gt;~/.config/pip/pip.conf&lt;/code&gt;文件，加入或修改&lt;code&gt;index-url&lt;/code&gt;相关段落为：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;[global]
 index-url = https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
