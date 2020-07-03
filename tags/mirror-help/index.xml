@@ -37,7 +37,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;cloud/bioconda&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/bioconda&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/conda-forge&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/conda-forge&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/conda-forge&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/conda-forge&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/menpo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/soumith&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
