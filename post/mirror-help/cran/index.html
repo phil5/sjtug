@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>debian &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>cran &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,12 +52,12 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>debian</h1>
+                    <h1>cran</h1>
                     <h2 class="headline">
-                    January 1, 0001 
+                    July 4, 2020 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
                     
                     <br>
@@ -72,13 +72,17 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>Debian 是完全由自由软件组成的类UNIX操作系统，其包含的多数软件使用GNU通用公共许可协议授权，并由Debian计划的参与者组成团队对其进行打包、开发与维护。Debian以其坚守Unix和自由软件的精神，以及其给予用户的众多选择而闻名。现时Debian提供了超过25,000个软件[9]，超过50,000个软件包[10]，并正式支持10个计算机系统结构。</p>
+                    <p>使用方法：</p>
 
-<p>使用方法：</p>
+<p>在安装时指定 repo。</p>
 
-<p>先安装 ca-certificates apt-transport-https 保证第三方https源可以使用。</p>
+<pre><code class="language-R">install.packages(&quot;lattice&quot;, repos=&quot;https://mirrors.sjtug.sjtu.edu.cn/cran/&quot;)
+</code></pre>
 
-<p>再打开<code>/etc/apt/sources.list</code>，将类似于<code>http://deb.debian.org/debian/</code>的地址均替换为<code>https://mirrors.sjtug.sjtu.edu.cn/debian</code>即可。</p>
+<p>在 <code>.Rprofile</code> 中设置默认 repo。</p>
+
+<pre><code class="language-R">options(repos=structure(c(CRAN=&quot;https://mirrors.sjtug.sjtu.edu.cn/cran/&quot;)))
+</code></pre>
 
                 </section>
             </article>
@@ -91,7 +95,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fdebian%2f - debian by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fcran%2f - cran by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
