@@ -868,6 +868,8 @@ UPDATE(07-01)：更新第二周主题&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/soumith&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cloud/atztogo&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/atztogo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/pytorch&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/pytorch-test&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch-test&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
