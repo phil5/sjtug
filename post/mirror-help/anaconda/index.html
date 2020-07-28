@@ -76,7 +76,23 @@
 
 <p>SJTUG 源镜像了常用的 conda 库，以方便科学计算用户使用。</p>
 
-<p><strong>使用说明</strong>: 使用<code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/{{你所需要的包名}}</code>来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：</p>
+<p><strong>使用说明</strong></p>
+
+<p>编辑 <code>~/.condarc</code></p>
+
+<pre><code>default_channels:
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main
+custom_channels:
+  conda-forge: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
+  pytorch: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
+channels:
+  - defaults
+</code></pre>
+
+<p>在 <code>custom_channels</code> 中您可以添加下面所列的其他第三方源。</p>
+
+<p>您也可以使用<code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/{{你所需要的包名}}</code>来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：</p>
 
 <ul>
 <li><strong>官方源</strong>:
