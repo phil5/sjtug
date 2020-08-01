@@ -6,10 +6,29 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 09 Jul 2020 01:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 23:30:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mongodb</title>
+      <link>https://sjtug.org/post/mirror-help/mongodb/</link>
+      <pubDate>Sat, 01 Aug 2020 23:30:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/mongodb/</guid>
+      <description>&lt;p&gt;mongodb 源是 &lt;a href=&#34;http://repo.mongodb.org&#34;&gt;repo.mongodb.org&lt;/a&gt; 的全量同步。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用说明&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;请参照官方教程配置并安装 &lt;a href=&#34;https://docs.mongodb.com/manual/administration/install-on-linux/&#34;&gt;https://docs.mongodb.com/manual/administration/install-on-linux/&lt;/a&gt;。
+在安装过程中，把 &lt;code&gt;https://repo.mongodb.org/&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/mongodb/&lt;/code&gt;。比如在 Ubuntu focal 中使用时，可以执行以下指令。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
+echo &amp;quot;deb [ arch=amd64,arm64 ] https://mirrors.sjtug.sjtu.edu.cn/mongodb/apt/ubuntu/ focal/mongodb-org/4.4 multiverse&amp;quot; | tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>crates.io</title>

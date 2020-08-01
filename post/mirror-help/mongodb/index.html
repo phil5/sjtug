@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>dart_packages &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>mongodb &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,12 +52,12 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>dart_packages</h1>
+                    <h1>mongodb</h1>
                     <h2 class="headline">
-                    January 1, 0001 
+                    August 1, 2020 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
                     
                     <br>
@@ -72,11 +72,16 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>dart_packages镜像反代了Dart语言官方仓库 <a href="https://pub.dartlang.org">https://pub.dartlang.org</a> ，可以加速Dart包的下载。</p>
+                    <p>mongodb 源是 <a href="http://repo.mongodb.org">repo.mongodb.org</a> 的全量同步。</p>
 
-<p>使用方法：</p>
+<p><strong>使用说明</strong></p>
 
-<p>设置环境变量<code>export PUB_HOSTED_URL=https://dart-pub.mirrors.sjtug.sjtu.edu.cn</code>即可。</p>
+<p>请参照官方教程配置并安装 <a href="https://docs.mongodb.com/manual/administration/install-on-linux/">https://docs.mongodb.com/manual/administration/install-on-linux/</a>。
+在安装过程中，把 <code>https://repo.mongodb.org/</code> 替换为 <code>https://mirrors.sjtug.sjtu.edu.cn/mongodb/</code>。比如在 Ubuntu focal 中使用时，可以执行以下指令。</p>
+
+<pre><code>wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
+echo &quot;deb [ arch=amd64,arm64 ] https://mirrors.sjtug.sjtu.edu.cn/mongodb/apt/ubuntu/ focal/mongodb-org/4.4 multiverse&quot; | tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+</code></pre>
 
                 </section>
             </article>
@@ -89,7 +94,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fdart-packages%2f - dart_packages by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fmongodb%2f - mongodb by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
