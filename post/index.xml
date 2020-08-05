@@ -6,10 +6,119 @@
     <description>Recent content in Posts on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Aug 2020 23:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 12:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>julia</title>
+      <link>https://sjtug.org/post/mirror-help/julia/</link>
+      <pubDate>Wed, 05 Aug 2020 12:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/julia/</guid>
+      <description>
+
+&lt;p&gt;SJTUG 目前提供了 Julia 的官方包注册表 &lt;a href=&#34;https://github.com/JuliaRegistries/General&#34;&gt;General&lt;/a&gt; 镜像来加速 Julia 包的安装。&lt;/p&gt;
+
+&lt;p&gt;注：本镜像的使用需要 Julia &lt;code&gt;v1.4.0&lt;/code&gt; 或更新的版本。&lt;/p&gt;
+
+&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
+
+&lt;p&gt;只需要设置环境变量 &lt;code&gt;JULIA_PKG_SERVER&lt;/code&gt; 即可切换镜像。若成功切换镜像，则能通过 &lt;code&gt;versioninfo()&lt;/code&gt; 查询到相关信息，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; versioninfo()
+Julia Version 1.5.0
+Commit 96786e22cc (2020-08-01 23:44 UTC)
+Platform Info:
+  OS: macOS (x86_64-apple-darwin18.7.0)
+  CPU: Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, skylake)
+Environment:
+  JULIA_PKG_SERVER = https://mirrors.sjtug.sjtu.edu.cn/julia
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;若不设置该环境变量则默认使用官方服务器 &lt;code&gt;pkg.julialang.org&lt;/code&gt; 作为上游。本镜像站是其国内服务器的数据上游之一。&lt;/p&gt;
+
+&lt;h3 id=&#34;临时使用&#34;&gt;临时使用&lt;/h3&gt;
+
+&lt;p&gt;不同系统和命令行下设置环境变量的方式各不相同，在命令行下可以通过以下方式来临时修改环境变量&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linux Bash: &lt;code&gt;export JULIA_PKG_SERVER=https://mirrors.sjtug.sjtu.edu.cn/julia&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Windows Powershell: &lt;code&gt;$env:JULIA_PKG_SERVER = &#39;https://mirrors.sjtug.sjtu.edu.cn/julia&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;也可以利用 JuliaCN 社区维护的中文本地化工具包 &lt;a href=&#34;https://github.com/JuliaCN/JuliaZH.jl&#34;&gt;JuliaZH&lt;/a&gt; 来进行切换：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;using JuliaZH # 在 using 时会自动切换到国内的镜像站
+JuliaZH.set_mirror(&amp;quot;SJTUG&amp;quot;) # 也可以选择手动切换到 BFSU 镜像
+JuliaZH.mirrors # 查询记录的上游信息
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;永久使用&#34;&gt;永久使用&lt;/h3&gt;
+
+&lt;p&gt;不同系统和命令行下永久设定环境变量的方式也不相同，例如 Linux Bash 下可以通过修改 &lt;code&gt;~/.bashrc&lt;/code&gt; 文件实现该目的：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# ~/.bashrc
+export JULIA_PKG_SERVER=https://mirrors.sjtug.sjtu.edu.cn/julia
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;此外，这里再提供一种针对 Julia 的全平台通用的方式：&lt;code&gt;$JULIA_DEPOT_PATH/config/startup.jl&lt;/code&gt;
+( 默认为 &lt;code&gt;~/.julia/config/startup.jl&lt;/code&gt; ) 文件定义了每次启动 Julia 时都会执行的命令，编辑该文件，添加以下内容即可：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;# ~/.julia/config/startup.jl
+ENV[&amp;quot;JULIA_PKG_SERVER&amp;quot;] = &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/julia&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也可以选择使用 &lt;code&gt;JuliaZH&lt;/code&gt; 来一键修改/创建 &lt;code&gt;startup.jl&lt;/code&gt; 文件：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; JuliaZH.generate_startup(&amp;quot;SJTUG&amp;quot;)
+┌ Info: 添加 PkgServer
+│   服务器地址 = &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/julia&amp;quot;
+└   配置文件 = &amp;quot;/root/.julia/config/startup.jl&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;若要临时禁止，可以通过 &lt;code&gt;julia --startup-file=no&lt;/code&gt; 来取消执行 &lt;code&gt;startup.jl&lt;/code&gt; 文件。&lt;/p&gt;
+
+&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+
+&lt;h3 id=&#34;为什么有些包的下载还是很慢&#34;&gt;为什么有些包的下载还是很慢？&lt;/h3&gt;
+
+&lt;p&gt;有两类数据不会被镜像：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在 &lt;code&gt;deps/build.jl&lt;/code&gt; 文件中硬编码的下载地址，例如 &lt;a href=&#34;https://github.com/jheinen/GR.jl/blob/70f025d5cb439d036409f1985107cb5e1615097f/deps/build.jl#L116&#34;&gt;GR&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;Artifacts.toml&lt;/code&gt; 中没有给出 &lt;code&gt;download&lt;/code&gt; 项的资源, 例如 &lt;a href=&#34;https://github.com/JuliaImages/TestImages.jl/blob/eaa94348df619c65956e8cfb0032ecddb7a29d3a/Artifacts.toml&#34;&gt;TestImages&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在安装包含这两类数据的包时，其数据依然是从原始地址进行下载，因此若网络不稳定则可能会在 &lt;code&gt;build&lt;/code&gt; 阶段报错。&lt;/p&gt;
+
+&lt;h3 id=&#34;为什么注册表还是从原地址下载&#34;&gt;为什么注册表还是从原地址下载？&lt;/h3&gt;
+
+&lt;p&gt;Julia &lt;code&gt;v1.4.0&lt;/code&gt; 之前的版本采用的是 &lt;code&gt;git clone&lt;/code&gt; 的方式拉取注册表。为了保持兼容性，如果现有的注册表是一个完整的 git 仓库的话，
+那么即使设置了 PkgServer 作为上游镜像也依然会通过 &lt;code&gt;git&lt;/code&gt; 来进行更新，换句话说，不会通过镜像站来下载注册表数据。&lt;/p&gt;
+
+&lt;p&gt;以默认注册表 &lt;code&gt;General&lt;/code&gt; 为例，只需要手动将其重置到镜像站即可：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;删除当前注册表：&lt;code&gt;(@v1.4) pkg&amp;gt; registry rm General&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;从镜像站重新下载数据：&lt;code&gt;(@v1.4) pkg&amp;gt; registry add General&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;为什么有些包还是从原地址下载&#34;&gt;为什么有些包还是从原地址下载？&lt;/h3&gt;
+
+&lt;p&gt;镜像站只镜像注册表中记录的包，因此如果某些包是通过指定 URL 的方式来安装的话，那么该包的更新不会从镜像站进行下载。
+这常见于那些还未注册的包及其版本，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;]add Flux#master
+]add https://github.com/FluxML/Flux.jl.git
+Pkg.add(PackageSpec(url=&amp;quot;https://github.com/FluxML/Flux.jl.git&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>mongodb</title>
