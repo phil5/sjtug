@@ -6,10 +6,44 @@
     <description>Recent content in Posts on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Aug 2020 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 18:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增 archlinuxarm, julia, mongodb, Qt 镜像</title>
+      <link>https://sjtug.org/post/mirror-news/2020-08-05-new-mirrors/</link>
+      <pubDate>Wed, 05 Aug 2020 18:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2020-08-05-new-mirrors/</guid>
+      <description>&lt;p&gt;SJTUG 镜像源近期迎来了一大批更新。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改变了 archlinux 镜像的同步方式，实时性更强。&lt;/li&gt;
+&lt;li&gt;新增 archlinuxarm 源。&lt;/li&gt;
+&lt;li&gt;在 anaconda 中新增了 PyTorch 源。&lt;/li&gt;
+&lt;li&gt;新增 julia 源。该镜像源将成为中国大陆境内官方 Pkg Server 的上游之一。&lt;/li&gt;
+&lt;li&gt;新增 mongodb 源。&lt;/li&gt;
+&lt;li&gt;新增 Qt 源。我们近期在联系 Qt，希望将镜像加入官方镜像列表中。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家体验！&lt;/p&gt;
+
+&lt;p&gt;2019-2020 年我们还新增/修复了下面这些镜像：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;增强了 anaconda 同步的稳定性，修复了部分源 404 的问题。&lt;/li&gt;
+&lt;li&gt;修复了 CRAN 的同步问题。&lt;/li&gt;
+&lt;li&gt;修复了 crates.io 的重定向问题。&lt;/li&gt;
+&lt;li&gt;修复了 dart-package 的重定向问题。&lt;/li&gt;
+&lt;li&gt;pypi 改为反代。&lt;/li&gt;
+&lt;li&gt;修复了 maven 的访问问题。&lt;/li&gt;
+&lt;li&gt;新增了 google-fonts 反代。&lt;/li&gt;
+&lt;li&gt;新增了 packagist 元数据。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>julia</title>
