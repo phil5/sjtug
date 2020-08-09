@@ -59,7 +59,7 @@
 
 &lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
 
-&lt;p&gt;只需要设置环境变量 &lt;code&gt;JULIA_PKG_SERVER&lt;/code&gt; 即可切换镜像。若成功切换镜像，则能通过 &lt;code&gt;versioninfo()&lt;/code&gt; 查询到相关信息，例如：&lt;/p&gt;
+&lt;p&gt;只需要设置环境变量 &lt;code&gt;JULIA_PKG_SERVER=https://mirrors.sjtug.sjtu.edu.cn/julia&lt;/code&gt; 即可切换镜像。若成功切换镜像，则能通过 &lt;code&gt;versioninfo()&lt;/code&gt; 查询到相关信息，例如：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; versioninfo()
 Julia Version 1.5.0
@@ -118,6 +118,15 @@ ENV[&amp;quot;JULIA_PKG_SERVER&amp;quot;] = &amp;quot;https://mirrors.sjtug.sjtu
 &lt;p&gt;若要临时禁止，可以通过 &lt;code&gt;julia --startup-file=no&lt;/code&gt; 来取消执行 &lt;code&gt;startup.jl&lt;/code&gt; 文件。&lt;/p&gt;
 
 &lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+
+&lt;h3 id=&#34;加快-conda-jl-相关操作的速度&#34;&gt;加快 Conda.jl 相关操作的速度&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Conda.jl&lt;/code&gt; 的加速分为两部分：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;conda&lt;/code&gt; 的安装：如果系统中没有找到 &lt;code&gt;conda&lt;/code&gt; 的话，&lt;code&gt;Conda.jl&lt;/code&gt; 会下载并安装一份 miniconda。如果这一步下载非常缓慢的话，你可以提前从 &lt;a href=&#34;https://mirrors.bfsu.edu.cn/anaconda/archive/&#34;&gt;BFSU 镜像站&lt;/a&gt;下载并安装 anaconda，然后通过设置环境变量 &lt;code&gt;CONDA_JL_HOME=$HOME/anaconda3&lt;/code&gt; 来指定 &lt;code&gt;Conda.jl&lt;/code&gt; 所使用的&lt;code&gt;conda&lt;/code&gt;，这样就避免重复下载 &lt;code&gt;miniconda&lt;/code&gt;. （&lt;code&gt;$HOME/anaconda3&lt;/code&gt;是 anaconda3 的默认安装位置，你可能需要根据具体情况进行调整。）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda add&lt;/code&gt; 等操作的加速：这个只需要配置 anaconda 镜像源即可，即修改 &lt;code&gt;~/.condarc&lt;/code&gt; 文件。具体的配置可以查看镜像站中 anaconda 镜像的使用说明。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;为什么有些包的下载还是很慢&#34;&gt;为什么有些包的下载还是很慢？&lt;/h3&gt;
 
