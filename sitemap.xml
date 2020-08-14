@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sjtug.org/post/mirror-help/emacs-elpa/</loc>
+    <lastmod>2020-08-14T14:55:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sjtug.org/post/mirror-news/2020-08-05-new-mirrors/</loc>
     <lastmod>2020-08-05T18:00:00+08:00</lastmod>
   </url>
@@ -252,7 +257,7 @@
   
   <url>
     <loc>https://sjtug.org/tags/mirror-help/</loc>
-    <lastmod>2020-08-05T12:00:00+08:00</lastmod>
+    <lastmod>2020-08-14T14:55:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,13 +275,13 @@
   
   <url>
     <loc>https://sjtug.org/post/</loc>
-    <lastmod>2020-08-05T18:00:00+08:00</lastmod>
+    <lastmod>2020-08-14T14:55:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjtug.org/</loc>
-    <lastmod>2020-08-05T18:00:00+08:00</lastmod>
+    <lastmod>2020-08-14T14:55:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

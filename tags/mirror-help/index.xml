@@ -6,10 +6,25 @@
     <description>Recent content in Mirror Help on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Aug 2020 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 14:55:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-help/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs-elpa</title>
+      <link>https://sjtug.org/post/mirror-help/emacs-elpa/</link>
+      <pubDate>Fri, 14 Aug 2020 14:55:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/emacs-elpa/</guid>
+      <description>&lt;p&gt;emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。&lt;/p&gt;
+
+&lt;p&gt;具体设置方法请参考 &lt;a href=&#34;https://elpa.emacs-china.org&#34;&gt;https://elpa.emacs-china.org&lt;/a&gt;。
+将其中的 &lt;code&gt;http://elpa.emacs-china.org&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-china&lt;/code&gt; 即可。&lt;/p&gt;
+
+&lt;p&gt;SJTUG 不提供 emacs-china rsync 镜像。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>julia</title>
