@@ -20,9 +20,9 @@
       <description>&lt;p&gt;emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。&lt;/p&gt;
 
 &lt;p&gt;具体设置方法请参考 &lt;a href=&#34;https://elpa.emacs-china.org&#34;&gt;https://elpa.emacs-china.org&lt;/a&gt;。
-将其中的 &lt;code&gt;http://elpa.emacs-china.org&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-china&lt;/code&gt; 即可。&lt;/p&gt;
+将其中的 &lt;code&gt;http://elpa.emacs-china.org&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa&lt;/code&gt; 即可。&lt;/p&gt;
 
-&lt;p&gt;SJTUG 不提供 emacs-china rsync 镜像。&lt;/p&gt;
+&lt;p&gt;SJTUG 不提供 rsync 镜像。&lt;/p&gt;
 </description>
     </item>
     
