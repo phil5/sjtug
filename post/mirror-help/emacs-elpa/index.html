@@ -72,10 +72,96 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。</p>
+                    
 
-<p>具体设置方法请参考 <a href="https://elpa.emacs-china.org">https://elpa.emacs-china.org</a>。
-将其中的 <code>http://elpa.emacs-china.org</code> 替换为 <code>https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa</code> 即可。</p>
+<p>emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。</p>
+
+<table>
+<thead>
+<tr>
+<th>ELPA</th>
+<th>镜像地址</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://elpa.gnu.org/">GNU ELPA</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://melpa.org/">MELPA</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://stable.melpa.org/#/">MELPA Stable</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa-stable/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa-stable/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://marmalade-repo.org/">Marmalade</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/marmalade/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/marmalade/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://orgmode.org/elpa.html">Org</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.emacswiki.org/emacs/Sunrise_Commander">Sunrise Commander ELPA</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/sunrise-commander/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/sunrise-commander/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://user42.tuxfamily.org/elpa/index.html">user42 ELPA</a></td>
+<td><a href="https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/user42/">https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/user42/</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="使用方法">使用方法</h2>
+
+<p>根据你的需求，设置 <code>package-archives</code> ，比如用 GNU ELPA 和 MELPA：</p>
+
+<pre><code class="language-lisp">(setq package-archives '((&quot;gnu&quot; . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&quot;)
+                         (&quot;melpa&quot; . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&quot;)))
+
+</code></pre>
+
+<h3 id="spacemacs-用户">Spacemacs 用户</h3>
+
+<h4 id="master-分支">master 分支</h4>
+
+<p>添加下面的代码到  <code>.spacemacs</code>  的  <code>dotspacemacs/user-init()</code></p>
+
+<pre><code class="language-lisp">(setq configuration-layer--elpa-archives
+    '((&quot;melpa-cn&quot; . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&quot;)
+      (&quot;org-cn&quot;   . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&quot;)
+      (&quot;gnu-cn&quot;   . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&quot;)))
+</code></pre>
+
+<h4 id="develop-分支">develop 分支</h4>
+
+<p>使用 <code>configuration-layer-elpa-archives</code> 代替原来的 <code>configuration-layer--elpa-archives</code> （ <code>--</code> 换成 <code>-</code> ）</p>
+
+<pre><code class="language-lisp">(setq configuration-layer-elpa-archives
+    '((&quot;melpa-cn&quot; . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&quot;)
+      (&quot;org-cn&quot;   . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&quot;)
+      (&quot;gnu-cn&quot;   . &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&quot;)))
+</code></pre>
+
+<h3 id="cask-用户">Cask 用户</h3>
+
+<p><a href="https://github.com/cask/cask">Cask</a> 是一个 Emacs Lisp 的项目管理工具。这里还是以 GNU ELPA 和 MELPA 为例，在添加下面的代码到 Cask</p>
+
+<pre><code class="language-lisp">(source &quot;gnu&quot;   &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&quot;)
+(source &quot;melpa&quot; &quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&quot;)
+</code></pre>
+
+<p>本镜像上游为 <a href="https://elpa.emacs-china.org">https://elpa.emacs-china.org</a> 。</p>
 
 <p>SJTUG 不提供 rsync 镜像。</p>
 

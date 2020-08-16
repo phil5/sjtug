@@ -17,10 +17,96 @@
       <pubDate>Fri, 14 Aug 2020 14:55:00 +0800</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/emacs-elpa/</guid>
-      <description>&lt;p&gt;emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。&lt;/p&gt;
+      <description>
 
-&lt;p&gt;具体设置方法请参考 &lt;a href=&#34;https://elpa.emacs-china.org&#34;&gt;https://elpa.emacs-china.org&lt;/a&gt;。
-将其中的 &lt;code&gt;http://elpa.emacs-china.org&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ELPA&lt;/th&gt;
+&lt;th&gt;镜像地址&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://melpa.org/&#34;&gt;MELPA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://stable.melpa.org/#/&#34;&gt;MELPA Stable&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa-stable/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa-stable/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://marmalade-repo.org/&#34;&gt;Marmalade&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/marmalade/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/marmalade/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://orgmode.org/elpa.html&#34;&gt;Org&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.emacswiki.org/emacs/Sunrise_Commander&#34;&gt;Sunrise Commander ELPA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/sunrise-commander/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/sunrise-commander/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://user42.tuxfamily.org/elpa/index.html&#34;&gt;user42 ELPA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/user42/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/user42/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+
+&lt;p&gt;根据你的需求，设置 &lt;code&gt;package-archives&lt;/code&gt; ，比如用 GNU ELPA 和 MELPA：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;(setq package-archives &#39;((&amp;quot;gnu&amp;quot; . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&amp;quot;)
+                         (&amp;quot;melpa&amp;quot; . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&amp;quot;)))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;spacemacs-用户&#34;&gt;Spacemacs 用户&lt;/h3&gt;
+
+&lt;h4 id=&#34;master-分支&#34;&gt;master 分支&lt;/h4&gt;
+
+&lt;p&gt;添加下面的代码到  &lt;code&gt;.spacemacs&lt;/code&gt;  的  &lt;code&gt;dotspacemacs/user-init()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;(setq configuration-layer--elpa-archives
+    &#39;((&amp;quot;melpa-cn&amp;quot; . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&amp;quot;)
+      (&amp;quot;org-cn&amp;quot;   . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&amp;quot;)
+      (&amp;quot;gnu-cn&amp;quot;   . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&amp;quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;develop-分支&#34;&gt;develop 分支&lt;/h4&gt;
+
+&lt;p&gt;使用 &lt;code&gt;configuration-layer-elpa-archives&lt;/code&gt; 代替原来的 &lt;code&gt;configuration-layer--elpa-archives&lt;/code&gt; （ &lt;code&gt;--&lt;/code&gt; 换成 &lt;code&gt;-&lt;/code&gt; ）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;(setq configuration-layer-elpa-archives
+    &#39;((&amp;quot;melpa-cn&amp;quot; . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&amp;quot;)
+      (&amp;quot;org-cn&amp;quot;   . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/org/&amp;quot;)
+      (&amp;quot;gnu-cn&amp;quot;   . &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&amp;quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;cask-用户&#34;&gt;Cask 用户&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/cask/cask&#34;&gt;Cask&lt;/a&gt; 是一个 Emacs Lisp 的项目管理工具。这里还是以 GNU ELPA 和 MELPA 为例，在添加下面的代码到 Cask&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;(source &amp;quot;gnu&amp;quot;   &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&amp;quot;)
+(source &amp;quot;melpa&amp;quot; &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/melpa/&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;本镜像上游为 &lt;a href=&#34;https://elpa.emacs-china.org&#34;&gt;https://elpa.emacs-china.org&lt;/a&gt; 。&lt;/p&gt;
 
 &lt;p&gt;SJTUG 不提供 rsync 镜像。&lt;/p&gt;
 </description>
