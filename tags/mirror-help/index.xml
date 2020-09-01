@@ -347,6 +347,8 @@ replace-with = &amp;quot;mirror&amp;quot;
 
 &lt;p&gt;SJTUG 源镜像了常用的 conda 库，以方便科学计算用户使用。&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Note: 如果您正在从其他镜像源切换到 SJTUG，请检查我们是否同步了你所需要的 repo，以及该 repo 是否支持您使用的平台 (e.g. linux-64)。如果没有，请删除相关配置，并提出新镜像请求。&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;使用说明&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;编辑 &lt;code&gt;~/.condarc&lt;/code&gt;&lt;/p&gt;
@@ -361,7 +363,7 @@ channels:
   - defaults
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在 &lt;code&gt;custom_channels&lt;/code&gt; 中您可以添加下面所列的其他第三方源。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;custom_channels&lt;/code&gt; 中您可以添加下面所列的其他第三方源。我们建议您使用上面的方法配置，而非执行下面的指令。&lt;/p&gt;
 
 &lt;p&gt;您也可以使用&lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/{{你所需要的包名}}&lt;/code&gt;来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：&lt;/p&gt;
 
