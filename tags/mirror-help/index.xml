@@ -730,13 +730,20 @@ deb-src https://mirrors.sjtug.sjtu.edu.cn/kali kali-rolling main non-free contri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/msys2/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;收录架构&lt;/strong&gt;
-- MINGW: i686, x86_64
-- MSYS: i686, x86_64
-&lt;strong&gt;获取基本组件包&lt;/strong&gt;
-请访问该镜像目录下的&lt;code&gt;distrib/&lt;/code&gt;目录（&lt;a href=&#34;http://mirrors.sjtug.sjtu.edu.cn/msys2/distrib/x86_64/&#34;&gt;x86_64&lt;/a&gt;、&lt;a href=&#34;http://mirrors.sjtug.sjtu.edu.cn/msys2/distrib/i686/&#34;&gt;i686&lt;/a&gt;），找到名为&lt;code&gt;msys2-&amp;lt;架构&amp;gt;-&amp;lt;日期&amp;gt;.exe&lt;/code&gt;的文件（如&lt;code&gt;msys2-x86_64-20141113.exe&lt;/code&gt;），下载安装即可。
-&lt;strong&gt;pacman的配置&lt;/strong&gt;
-编辑&lt;code&gt;/etc/pacman.d/mirrorlist.mingw32&lt;/code&gt;，在文件开头添加：&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;收录架构&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MINGW: i686, x86_64&lt;/li&gt;
+&lt;li&gt;MSYS: i686, x86_64&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;获取基本组件包&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;请访问该镜像目录下的&lt;code&gt;distrib/&lt;/code&gt;目录（&lt;a href=&#34;http://mirrors.sjtug.sjtu.edu.cn/msys2/distrib/x86_64/&#34;&gt;x86_64&lt;/a&gt;、&lt;a href=&#34;http://mirrors.sjtug.sjtu.edu.cn/msys2/distrib/i686/&#34;&gt;i686&lt;/a&gt;），找到名为&lt;code&gt;msys2-&amp;lt;架构&amp;gt;-&amp;lt;日期&amp;gt;.exe&lt;/code&gt;的文件（如&lt;code&gt;msys2-x86_64-20141113.exe&lt;/code&gt;），下载安装即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;pacman的配置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;编辑&lt;code&gt;/etc/pacman.d/mirrorlist.mingw32&lt;/code&gt;，在文件开头添加：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686
 &lt;/code&gt;&lt;/pre&gt;
