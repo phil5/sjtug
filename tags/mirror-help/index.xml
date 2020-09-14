@@ -745,17 +745,17 @@ deb-src https://mirrors.sjtug.sjtu.edu.cn/kali kali-rolling main non-free contri
 
 &lt;p&gt;编辑&lt;code&gt;/etc/pacman.d/mirrorlist.mingw32&lt;/code&gt;，在文件开头添加：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686
+&lt;pre&gt;&lt;code&gt;Server = http://mirrors.sjtug.sjtu.edu.cn/msys2/mingw/i686
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;编辑&lt;code&gt;/etc/pacman.d/mirrorlist.mingw64&lt;/code&gt;，在文件开头添加：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Server = http://mirrors.ustc.edu.cn/msys2/mingw/x86_64
+&lt;pre&gt;&lt;code&gt;Server = http://mirrors.sjtug.sjtu.edu.cn/msys2/mingw/x86_64
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;编辑&lt;code&gt;/etc/pacman.d/mirrorlist.msys&lt;/code&gt;，在文件开头添加：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch
+&lt;pre&gt;&lt;code&gt;Server = http://mirrors.sjtug.sjtu.edu.cn/msys2/msys/$arch
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;然后执行&lt;code&gt;pacman -Sy&lt;/code&gt;刷新软件包数据即可。&lt;/p&gt;
