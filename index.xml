@@ -1220,18 +1220,16 @@ channels:
 &lt;li&gt;&lt;strong&gt;第三方源&lt;/strong&gt;:
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cloud/bioconda&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/bioconda&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/conda-forge&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/conda-forge&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/menpo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/soumith&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/viscid-hub&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/atztogo&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/atztogo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/pytorch&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cloud/pytorch-test&lt;/code&gt;: &lt;code&gt;conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch-test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/bioconda&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.bioconda https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/conda-forge&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.conda-forge https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/menpo&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.menpo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/soumith&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.soumith https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/viscid-hub&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.viscid-hub https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/atztogo&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.atztogo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/pytorch&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.pytorch https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud/pytorch-test&lt;/code&gt;: &lt;code&gt;conda config --set custom_channels.pytorch-test https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;如果您在使用时出现了找不到 &lt;code&gt;.conda&lt;/code&gt; 的&lt;a href=&#34;https://github.com/sjtug/mirror-requests/issues/56&#34;&gt;问题&lt;/a&gt;，请参考&lt;a href=&#34;https://github.com/sjtug/sjtug.github.io/issues/12&#34;&gt;这个解决方案&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;此外，在 Conda 4.7 后，官方的 default 源组默认只包含 main 和 r (windows 会包含 msys2) channel，其他官方源仍支持手动添加。但官方建议不再使用 free channel，详见 &lt;a href=&#34;https://www.anaconda.com/why-we-removed-the-free-channel-in-conda-4-7/&#34;&gt;Why We Removed the “Free” Channel in Conda 4.7&lt;/a&gt;。&lt;/p&gt;
 </description>
@@ -1270,6 +1268,30 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
 &lt;p&gt;之后，请执行下面的命令安装 archlinuxcn-keyring 包导入 GPG key。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pacman -Sy archlinuxcn-keyring
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>archlinuxarm</title>
+      <link>https://sjtug.org/post/mirror-help/archlinuxarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/archlinuxarm/</guid>
+      <description>&lt;p&gt;Arch Linux ARM 是在使用 ARM 架构处理器的计算机上运行的 Linux 发行版。它为许多主流的采用 ARM 处理器的硬件提供内核及应用程序支持，同时和 Arch Linux 一样具有提供最新的软件源、避免预安装多余软件包等特点。&lt;/p&gt;
+
+&lt;p&gt;本仓库包含 Arch Linux ARM 的系统镜像及软件源。&lt;/p&gt;
+
+&lt;p&gt;系统镜像使用方法：请访问 &lt;a href=&#34;https://archlinuxarm.org/platforms&#34;&gt;https://archlinuxarm.org/platforms&lt;/a&gt; ，阅读硬件平台对应的安装指引并下载对应的系统镜像。&lt;/p&gt;
+
+&lt;p&gt;软件源使用方法：在 &lt;code&gt;/etc/pacman.d/mirrorlist&lt;/code&gt; 的文件顶端（所有镜像源的最上面）加上：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Server = https://mirrors.sjtug.sjtu.edu.cn/archlinuxarm/$arch/$repo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;之后，请执行下面的命令更新软件包缓存。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pacman -Syy
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>anaconda &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>archlinuxarm &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,12 +52,12 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>anaconda</h1>
+                    <h1>archlinuxarm</h1>
                     <h2 class="headline">
                     January 1, 0001 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> shrubbroom
                     
                     
                     <br>
@@ -72,56 +72,21 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>Anaconda 是一种 Python 语言的免费增值开源发行版，用于进行大规模数据处理, 预测分析, 和科学计算, 致力于简化包的管理和部署。Anaconda 使用软件包管理系统 conda 进行包管理。</p>
+                    <p>Arch Linux ARM 是在使用 ARM 架构处理器的计算机上运行的 Linux 发行版。它为许多主流的采用 ARM 处理器的硬件提供内核及应用程序支持，同时和 Arch Linux 一样具有提供最新的软件源、避免预安装多余软件包等特点。</p>
 
-<p>SJTUG 源镜像了常用的 conda 库，以方便科学计算用户使用。</p>
+<p>本仓库包含 Arch Linux ARM 的系统镜像及软件源。</p>
 
-<p><strong>Note: 如果您正在从其他镜像源切换到 SJTUG，请检查我们是否同步了你所需要的 repo，以及该 repo 是否支持您使用的平台 (e.g. linux-64)。如果没有，请删除相关配置，并提出新镜像请求。</strong></p>
+<p>系统镜像使用方法：请访问 <a href="https://archlinuxarm.org/platforms">https://archlinuxarm.org/platforms</a> ，阅读硬件平台对应的安装指引并下载对应的系统镜像。</p>
 
-<p><strong>使用说明</strong></p>
+<p>软件源使用方法：在 <code>/etc/pacman.d/mirrorlist</code> 的文件顶端（所有镜像源的最上面）加上：</p>
 
-<p>编辑 <code>~/.condarc</code></p>
-
-<pre><code>default_channels:
-  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r
-  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main
-custom_channels:
-  conda-forge: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
-  pytorch: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
-channels:
-  - defaults
+<pre><code>Server = https://mirrors.sjtug.sjtu.edu.cn/archlinuxarm/$arch/$repo
 </code></pre>
 
-<p>在 <code>custom_channels</code> 中您可以添加下面所列的其他第三方源。我们建议您使用上面的方法配置，而非执行下面的指令。</p>
+<p>之后，请执行下面的命令更新软件包缓存。</p>
 
-<p>您也可以使用<code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/{{你所需要的包名}}</code>来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：</p>
-
-<ul>
-<li><strong>官方源</strong>:
-
-<ul>
-<li><code>pkgs/free</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/free</code></li>
-<li><code>pkgs/main</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main</code></li>
-<li><code>pkgs/mro</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/mro</code></li>
-<li><code>pkgs/msys2</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/msys2</code></li>
-<li><code>pkgs/pro</code>: (deprecated) <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/pro</code></li>
-<li><code>pkgs/r</code>: (empty) <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r</code></li>
-</ul></li>
-<li><strong>第三方源</strong>:
-
-<ul>
-<li><code>cloud/bioconda</code>: <code>conda config --set custom_channels.bioconda https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/conda-forge</code>: <code>conda config --set custom_channels.conda-forge https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/menpo</code>: <code>conda config --set custom_channels.menpo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/soumith</code>: <code>conda config --set custom_channels.soumith https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/viscid-hub</code>: <code>conda config --set custom_channels.viscid-hub https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/atztogo</code>: <code>conda config --set custom_channels.atztogo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/pytorch</code>: <code>conda config --set custom_channels.pytorch https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/pytorch-test</code>: <code>conda config --set custom_channels.pytorch-test https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-</ul></li>
-</ul>
-
-<p>此外，在 Conda 4.7 后，官方的 default 源组默认只包含 main 和 r (windows 会包含 msys2) channel，其他官方源仍支持手动添加。但官方建议不再使用 free channel，详见 <a href="https://www.anaconda.com/why-we-removed-the-free-channel-in-conda-4-7/">Why We Removed the “Free” Channel in Conda 4.7</a>。</p>
+<pre><code>pacman -Syy
+</code></pre>
 
                 </section>
             </article>
@@ -134,7 +99,7 @@ channels:
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fanaconda%2f - anaconda by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2farchlinuxarm%2f - archlinuxarm by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
