@@ -110,18 +110,16 @@ channels:
 <li><strong>第三方源</strong>:
 
 <ul>
-<li><code>cloud/bioconda</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/bioconda</code></li>
-<li><code>cloud/conda-forge</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/conda-forge</code></li>
-<li><code>cloud/menpo</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/menpo</code></li>
-<li><code>cloud/soumith</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/soumith</code></li>
-<li><code>cloud/viscid-hub</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/viscid-hub</code></li>
-<li><code>cloud/atztogo</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/atztogo</code></li>
-<li><code>cloud/pytorch</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch</code></li>
-<li><code>cloud/pytorch-test</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/pytorch-test</code></li>
+<li><code>cloud/bioconda</code>: <code>conda config --set custom_channels.bioconda https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/conda-forge</code>: <code>conda config --set custom_channels.conda-forge https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/menpo</code>: <code>conda config --set custom_channels.menpo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/soumith</code>: <code>conda config --set custom_channels.soumith https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/viscid-hub</code>: <code>conda config --set custom_channels.viscid-hub https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/atztogo</code>: <code>conda config --set custom_channels.atztogo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/pytorch</code>: <code>conda config --set custom_channels.pytorch https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/pytorch-test</code>: <code>conda config --set custom_channels.pytorch-test https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
 </ul></li>
 </ul>
-
-<p>如果您在使用时出现了找不到 <code>.conda</code> 的<a href="https://github.com/sjtug/mirror-requests/issues/56">问题</a>，请参考<a href="https://github.com/sjtug/sjtug.github.io/issues/12">这个解决方案</a>。</p>
 
 <p>此外，在 Conda 4.7 后，官方的 default 源组默认只包含 main 和 r (windows 会包含 msys2) channel，其他官方源仍支持手动添加。但官方建议不再使用 free channel，详见 <a href="https://www.anaconda.com/why-we-removed-the-free-channel-in-conda-4-7/">Why We Removed the “Free” Channel in Conda 4.7</a>。</p>
 
@@ -173,6 +171,13 @@ channels:
             <ul id="post-list" class="archive readmore">
     <h3>Read more</h3>
     
+    
+        
+        <li>
+            <a href="https://sjtug.org/post/mirror-news/2020-09-28-new-mirrors/">新增 emacs-elpa 与 msys2 镜像<aside class="dates">Sep 28</aside></a>
+        </li>
+        
+   
     
         
         <li>
@@ -233,13 +238,6 @@ channels:
         
         <li>
             <a href="https://sjtug.org/post/mirror-news/2019-10-10-data-leak/">关于19年10月软件源日志泄漏的通告<aside class="dates">Oct 10</aside></a>
-        </li>
-        
-   
-    
-        
-        <li>
-            <a href="https://sjtug.org/post/mirror-news/2019-10-09-remove-pypi/">Pypi镜像源改为反代<aside class="dates">Oct 9</aside></a>
         </li>
         
    
