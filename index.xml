@@ -1347,7 +1347,7 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
 
 &lt;p&gt;先安装 ca-certificates apt-transport-https 保证第三方https源可以使用。&lt;/p&gt;
 
-&lt;p&gt;再打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将类似于&lt;code&gt;http://deb.debian.org/debian/&lt;/code&gt;的地址均替换为&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;再打开&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将类似于&lt;code&gt;http://deb.debian.org/debian/&lt;/code&gt;的地址均替换为&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian/&lt;/code&gt;即可。&lt;/p&gt;
 </description>
     </item>
     
@@ -1811,6 +1811,133 @@ format = columns
     </item>
     
     <item>
+      <title>raspberry-pi-os-images</title>
+      <link>https://sjtug.org/post/mirror-help/raspberry-pi-os-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/raspberry-pi-os-images/</guid>
+      <description>&lt;p&gt;主仓库地址： &lt;a href=&#34;http://downloads.raspberrypi.org/&#34;&gt;http://downloads.raspberrypi.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;根据需要的版本进入以下包含 Raspberry Pi OS 系统镜像的目录，选择&lt;code&gt;.zip&lt;/code&gt;文件下载即可。推荐使用 &lt;a href=&#34;https://www.balena.io/etcher/&#34;&gt;balenaEtcher&lt;/a&gt; 将镜像写入 SD 卡&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Raspberry Pi OS 版本&lt;/th&gt;
+&lt;th&gt;存储目录&lt;/th&gt;
+&lt;th&gt;预计大小&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;精简版 Raspberry Pi OS 系统&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspios_lite_armhf/images/&#34;&gt;raspios_lite_armhf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;0.4 GiB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;常规版 Raspberry Pi OS 系统&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspios_armhf/images/&#34;&gt;raspios_armhf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1.1 GiB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;完整版 Raspberry Pi OS 系统&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspios_full_armhf/images/&#34;&gt;raspios_full_armhf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2.5 GiB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;精简版 Raspberry Pi OS 64位系统&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspios_lite_arm64/images/&#34;&gt;raspios_lite_arm64&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;0.5 GiB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;常规版 Raspberry Pi OS 64位系统&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspios_arm64/images/&#34;&gt;raspios_arm64&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1.0 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;备注&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;暂无 Raspberry Pi OS 64位完整版系统&lt;/li&gt;
+&lt;li&gt;Raspberry Pi OS 是 Raspbian 的后继者，二者名称不同，但功能和界面相同。首个 Raspberry Pi OS 系统发行于 2020年5月27日&lt;/li&gt;
+&lt;li&gt;2012年7月15日-2020年2月14日期间发行的旧版 Raspbian 系统镜像与 Raspberry Pi OS 位于不同目录，各版本分别位于：&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspbian_lite/images/&#34;&gt;raspbian_lite&lt;/a&gt;、&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspbian/images/&#34;&gt;raspbian&lt;/a&gt;、&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspberry-pi-os-images/raspbian_full/images/&#34;&gt;raspbian_full&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Raspberry Pi OS 常用设置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;无头初始化设置&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;启用 SSH：在 SD 卡 boot 分区中创建名为 &lt;code&gt;ssh&lt;/code&gt; （不应包括任何扩展名或其他字符）的空白文件&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;预设 WiFi 信息：在 SD 卡 boot 分区中创建名为 &lt;code&gt;wpa_supplicant.conf&lt;/code&gt; 的文本文件，按如下格式填写 &lt;code&gt;YOUR_WiFi_NAME&lt;/code&gt; 和 &lt;code&gt;YOUR_WiFi_PASSWORD&lt;/code&gt; ，推荐设置为本机 WiFi 热点或拥有管理员权限的无线路由器 WiFi ，以便查找树莓派的 IP 地址&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CN
+    
+network={
+    ssid=&amp;quot;YOUR_WiFi_NAME&amp;quot;
+    psk=&amp;quot;YOUR_WiFi_PASSWORD&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;远程连接：插卡启动树莓派，在 WiFi 热点中查询 IP 分配情况，确认树莓派的 IP 地址，使用 SSH 进行远程连接。树莓派的默认 SSH 端口为 22，用户名为 &lt;code&gt;pi&lt;/code&gt; ，默认密码为 &lt;code&gt;raspberry&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;命令行下的设置&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在终端输入 &lt;code&gt;sudo raspi-config&lt;/code&gt; 命令进行基本设置。可将时区设置为 &lt;code&gt;Asia/Shanghai&lt;/code&gt; ，默认区域更改为 &lt;code&gt;zh_CN.UTF-8&lt;/code&gt; ，可启用 VNC 以进行远程桌面连接&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;图形界面下的设置&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;首次进入桌面时，根据提示进行鼠标操作设置即可&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;apt 软件源修改&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Raspberry Pi OS 系统镜像内预置的 apt 软件源在国内访问缓慢，可将 apt 软件源更改为 SJTUG 镜像源&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;将 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; 文件中的 raspbian 存储库由 &lt;code&gt;http://raspbian.raspberrypi.org/raspbian/&lt;/code&gt; 更改为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspbian/raspbian/&lt;/code&gt; ，对于64位 Raspberry Pi OS ，将 &lt;code&gt;http://deb.debian.org/debian/&lt;/code&gt; 更改为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian/&lt;/code&gt; ，将 &lt;code&gt;http://deb.debian.org/debian-security/&lt;/code&gt; 更改为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/debian-security/&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;将 &lt;code&gt;/etc/apt/sources.list.d/raspi.list&lt;/code&gt; 文件中的 raspberrypi 存储库由 &lt;code&gt;http://archive.raspberrypi.org/debian/&lt;/code&gt; 更改为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspberrypi/debian/&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;可输入以下命令完成 apt 软件源设置（截至 2020-08-27 版仍然适用）&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak
+sudo sed -i &amp;quot;s|http://raspbian.raspberrypi.org/raspbian/|https://mirrors.sjtug.sjtu.edu.cn/raspbian/raspbian/|g&amp;quot; /etc/apt/sources.list
+sudo sed -i &amp;quot;s|http://deb.debian.org/debian|https://mirrors.sjtug.sjtu.edu.cn/debian|g&amp;quot; /etc/apt/sources.list
+sudo sed -i &amp;quot;s|http://archive.raspberrypi.org/debian/|https://mirrors.sjtug.sjtu.edu.cn/raspberrypi/debian/|g&amp;quot; /etc/apt/sources.list.d/raspi.list
+sudo apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;软件包更新&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>raspberrypi</title>
       <link>https://sjtug.org/post/mirror-help/raspberrypi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1830,17 +1957,13 @@ format = columns
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/raspbian/</guid>
-      <description>&lt;p&gt;Raspbian是为树莓派设计，基于Debian的操作系统。本镜像提供了Raspbian的官方软件源与光盘镜像。&lt;/p&gt;
+      <description>&lt;p&gt;Raspberry Pi OS 是为树莓派设计，基于 Debian 的操作系统。本镜像提供了 Raspberry Pi OS 的官方软件源。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;更换软件源：&lt;/p&gt;
 
 &lt;p&gt;编辑&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;，将所有的&lt;code&gt;deb&lt;/code&gt;与&lt;code&gt;deb-src&lt;/code&gt;之后的网址替换成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/raspbian/raspbian/&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;下载ISO镜像：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/raspbian/images/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/raspbian/images/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
