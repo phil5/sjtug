@@ -6,10 +6,30 @@
     <description>Recent content in Mirror Help on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Aug 2020 14:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 19:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-help/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git/opam-repository.git</title>
+      <link>https://sjtug.org/post/mirror-help/opam-git/</link>
+      <pubDate>Tue, 13 Oct 2020 19:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/opam-git/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://opam.ocaml.org&#34;&gt;opam&lt;/a&gt; 是 OCaml 的包管理器。SJTUG 提供 opam 的反代服务。&lt;/p&gt;
+
+&lt;p&gt;首次使用 opam，可以使用 SJTUG 镜像源初始化 opam。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;opam init default https://mirrors.sjtug.sjtu.edu.cn/git/opam-repository.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;使用下面的指令，可以将默认源替换为 SJTUG 镜像。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;opam repo set-url default https://mirrors.sjtug.sjtu.edu.cn/git/opam-repository.git --all --set-default
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>emacs-elpa</title>
