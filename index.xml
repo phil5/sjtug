@@ -2028,7 +2028,33 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
 
 &lt;p&gt;使用方式：&lt;/p&gt;
 
-&lt;p&gt;使用&lt;code&gt;sudo nano /etc/apt/sources.list&lt;/code&gt;打开镜像源列表文件。将类似于&lt;code&gt;http://cn.archive.ubuntu.com/ubuntu&lt;/code&gt;的地址改成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/ubuntu&lt;/code&gt;，之后按&lt;code&gt;Ctrl-O 回车&lt;/code&gt;保存，按&lt;code&gt;Ctrl-X&lt;/code&gt;退出。最后执行&lt;code&gt;sudo apt update&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;sudo nano /etc/apt/sources.list&lt;/code&gt;打开镜像源列表文件。将类似于&lt;code&gt;http://cn.archive.ubuntu.com/ubuntu&lt;/code&gt;或&lt;code&gt;http://cn.archive.ubuntu.com/ubuntu&lt;/code&gt;的地址改成&lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/ubuntu&lt;/code&gt;，之后按&lt;code&gt;Ctrl-O 回车&lt;/code&gt;保存，按&lt;code&gt;Ctrl-X&lt;/code&gt;退出。最后执行&lt;code&gt;sudo apt update&lt;/code&gt;即可。也可使用&lt;code&gt;sudo sed -i &#39;s/http:\/\/archive.ubuntu.com/http:\/\/mirrors.sjtug.sjtu.edu.cn/g&#39; /etc/apt/sources.list&lt;/code&gt;指令直接批量修改。&lt;/p&gt;
+
+&lt;p&gt;以下为修改后的镜像源列表文件的示例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal main restricted
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal main restricted
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates main restricted
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates main restricted
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal universe
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal universe
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates universe
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates universe
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal multiverse
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates multiverse
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-backports main restricted universe multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu focal partner
+# deb-src http://archive.canonical.com/ubuntu focal partner
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-security main restricted universe multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-security main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中&lt;code&gt;deb-src&lt;/code&gt;为源码镜像，默认注释以提高速度。可将原镜像列表备份后替换为上述内容。&lt;/p&gt;
 </description>
     </item>
     

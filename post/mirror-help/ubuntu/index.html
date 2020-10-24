@@ -78,7 +78,33 @@
 
 <p>使用方式：</p>
 
-<p>使用<code>sudo nano /etc/apt/sources.list</code>打开镜像源列表文件。将类似于<code>http://cn.archive.ubuntu.com/ubuntu</code>的地址改成<code>https://mirrors.sjtug.sjtu.edu.cn/ubuntu</code>，之后按<code>Ctrl-O 回车</code>保存，按<code>Ctrl-X</code>退出。最后执行<code>sudo apt update</code>即可。</p>
+<p>使用<code>sudo nano /etc/apt/sources.list</code>打开镜像源列表文件。将类似于<code>http://cn.archive.ubuntu.com/ubuntu</code>或<code>http://cn.archive.ubuntu.com/ubuntu</code>的地址改成<code>https://mirrors.sjtug.sjtu.edu.cn/ubuntu</code>，之后按<code>Ctrl-O 回车</code>保存，按<code>Ctrl-X</code>退出。最后执行<code>sudo apt update</code>即可。也可使用<code>sudo sed -i 's/http:\/\/archive.ubuntu.com/http:\/\/mirrors.sjtug.sjtu.edu.cn/g' /etc/apt/sources.list</code>指令直接批量修改。</p>
+
+<p>以下为修改后的镜像源列表文件的示例：</p>
+
+<pre><code># See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal main restricted
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal main restricted
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates main restricted
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates main restricted
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal universe
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal universe
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates universe
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates universe
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal multiverse
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-updates multiverse
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-backports main restricted universe multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu focal partner
+# deb-src http://archive.canonical.com/ubuntu focal partner
+deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-security main restricted universe multiverse
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-security main restricted universe multiverse
+</code></pre>
+
+<p>其中<code>deb-src</code>为源码镜像，默认注释以提高速度。可将原镜像列表备份后替换为上述内容。</p>
 
                 </section>
             </article>
