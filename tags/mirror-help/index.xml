@@ -351,6 +351,25 @@ replace-with = &amp;quot;mirror&amp;quot;
     </item>
     
     <item>
+      <title>git/crates.io-index</title>
+      <link>https://sjtug.org/post/mirror-help/creates.io.git/</link>
+      <pubDate>Thu, 09 Jul 2020 01:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/creates.io.git/</guid>
+      <description>&lt;p&gt;编辑 &lt;code&gt;~/.cargo/config&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[source]
+
+[source.mirror]
+registry = &amp;quot;https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index/&amp;quot;
+
+[source.crates-io]
+replace-with = &amp;quot;mirror&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>cran</title>
       <link>https://sjtug.org/post/mirror-help/cran/</link>
       <pubDate>Sat, 04 Jul 2020 15:33:04 +0800</pubDate>
