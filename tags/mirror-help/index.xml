@@ -52,7 +52,7 @@
       <guid>https://sjtug.org/post/mirror-help/emacs-elpa/</guid>
       <description>
 
-&lt;p&gt;emacs-elpa 包含了 GNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 7 个镜像。&lt;/p&gt;
+&lt;p&gt;emacs-elpa 包含了 GNU ELPA, NonGNU ELPA, MELPA, MELPA Stable, Marmalade, Org, Sunrise Commander ELPA, user42 ELPA 这 8 个镜像。&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -66,6 +66,11 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;http://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/gnu/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://elpa.gnu.org/nongnu/&#34;&gt;GNU ELPA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/nongnu/&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/emacs-elpa/nongnu/&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
