@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>git/homebrew-cask.git &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>SJTUG 镜像源智能缓存正式上线 &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,19 +52,19 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>git/homebrew-cask.git</h1>
+                    <h1>SJTUG 镜像源智能缓存正式上线</h1>
                     <h2 class="headline">
-                    January 1, 0001 
+                    December 7, 2020 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
                     
                     <br>
                     
                     
                         
-                            <a href="https://sjtug.org/tags/mirror-help">mirror-help</a>
+                            <a href="https://sjtug.org/tags/mirror-news">mirror-news</a>
                         
                     
                     
@@ -72,20 +72,25 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>homebrew-cask.git镜像了<a href="https://github.com/Homebrew/homebrew-cask.git">Homebrew Cask的描述文件，主要包括了较大的二进制文件与macOS应用</a>。</p>
+                    <p>SJTUG 镜像在近期进行了一次更新。我们开发了智能缓存工具 <a href="https://github.com/sjtug/mirror-intel">mirror-intel</a>，
+并将部分反向代理软件源移植到了智能缓存系统上。</p>
 
-<p><em>SJTUG镜像同时也提供了<code>homebrew-core</code>和<code>brew-bottles</code>镜像，欢迎大家使用。</em></p>
+<p>智能缓存的后端是由上海交通大学网络信息中心提供的对象存储服务。</p>
 
-<p>使用方法：</p>
+<p>当您访问智能缓存软件源时，服务器会先检测文件是否在对象存储中。如果存在，请求会直接被重定向到 <a href="https://s3.jcloud.sjtu.edu.cn">https://s3.jcloud.sjtu.edu.cn</a> 。
+否则，请求会被重定向到上游；与此同时，智能缓存会将文件同步到对象存储中。</p>
 
-<pre><code class="language-sh">cd &quot;$(brew --repo)&quot;/Library/Taps/homebrew/homebrew-cask
-git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-cask.git
-</code></pre>
+<p>目前通过智能缓存提供服务的软件源镜像包括：</p>
 
-<p>然后执行：</p>
+<ul>
+<li>rust-static (rustup 镜像源)。上游为 <a href="https://static.rust-lang.org">https://static.rust-lang.org</a> 。近三个月的工具链均已缓存。</li>
+<li>crates.io (cargo 包管理器镜像源)。上游为 <a href="https://static.crates.io">https://static.crates.io</a> 。所有包都已缓存。</li>
+<li>homebrew-bottles。上游为清华大学开源软件镜像站 (TUNA)。所有包都已缓存。</li>
+<li>pypi-packages。上游为清华大学开源软件镜像站 (TUNA)。正在同步中。</li>
+<li>flathub, fedora-ostree, fedora-iot 均使用官方 ostree 上游。所有分支都已缓存。ostree 镜像还在测试阶段，正式版会在近几个月内发布。</li>
+</ul>
 
-<pre><code class="language-sh">brew update
-</code></pre>
+<p>欢迎大家的使用～</p>
 
                 </section>
             </article>
@@ -98,7 +103,7 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-cask.gi
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fhomebrew-cask%2f - git%2fhomebrew-cask.git by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-news%2f2020-12-07-announcing-new-arch%2f - SJTUG%20%e9%95%9c%e5%83%8f%e6%ba%90%e6%99%ba%e8%83%bd%e7%bc%93%e5%ad%98%e6%ad%a3%e5%bc%8f%e4%b8%8a%e7%ba%bf by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
