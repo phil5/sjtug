@@ -819,6 +819,24 @@ deb-src https://mirrors.sjtug.sjtu.edu.cn/kali kali-rolling main non-free contri
     </item>
     
     <item>
+      <title>linuxliteos</title>
+      <link>https://sjtug.org/post/mirror-help/linuxliteos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/linuxliteos/</guid>
+      <description>&lt;p&gt;Linux Lite 是一个基于 Ubuntu 长期支持版本（LTS）的 Linux 发行版，搭载 Xfce 桌面环境。Linux Lite 的目的是将 Windows 用户引入 Linux，对新手比较友好。其旨在提供一套完整的应用程序来帮助用户满足用户日常的计算需求，这包括完整的办公套件、媒体播放器和其他基本的日常软件。
+&lt;strong&gt;使用方式：&lt;/strong&gt;
+在终端输入&lt;code&gt;sudo /etc/apt/sources.d&lt;/code&gt;，删除原有内容，用一下内容代替。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb https://mirrors.sjtug.sjtu.edu.cn/linuxliteos/ emerald main
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后
+&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>maven-central</title>
       <link>https://sjtug.org/post/mirror-help/maven-central/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
