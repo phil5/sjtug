@@ -1649,14 +1649,29 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/guix/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://guix.gnu.org/&#34;&gt;GNU/Guix&lt;/a&gt;是隶属于GNU项目的自由软件发行版。Guix可以作为独立的操作系统发行版安装在计算机上，可以作为软件包管理器安装在别的Linux发行版上。
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://guix.gnu.org/&#34;&gt;GNU/Guix&lt;/a&gt;是隶属于GNU项目的自由软件发行版。Guix可以作为独立的操作系统发行版安装在计算机上，可以作为软件包管理器安装在别的Linux发行版上。
 它的核心是一个函数式软件包管理器，支持事务性的升级、回滚操作。用户可以通过
 &lt;a href=&#34;https://www.gnu.org/software/guile/&#34;&gt;Guile&lt;/a&gt;语言编写配置文件管理操作系统的服务或者管理用户安装的软件。&lt;/p&gt;
 
-&lt;p&gt;软件源使用方法：&lt;/p&gt;
+&lt;h2 id=&#34;git-镜像&#34;&gt;Git 镜像&lt;/h2&gt;
+
+&lt;p&gt;Git 镜像的地址为 &lt;a href=&#34;https://git.sjtu.edu.cn/sjtug/guix.git&#34;&gt;https://git.sjtu.edu.cn/sjtug/guix.git&lt;/a&gt;。修改 &lt;code&gt;~/.config/guix/channels.scm&lt;/code&gt; 文件即可在 &lt;code&gt;guix pull&lt;/code&gt; 时使用。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(list (channel
+       (inherit (car %default-channels))
+       (url &amp;quot;https://git.sjtu.edu.cn/sjtug/guix.git&amp;quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;substitute-镜像&#34;&gt;Substitute 镜像&lt;/h2&gt;
+
+&lt;p&gt;镜像地址为 &lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/guix&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/guix&lt;/a&gt;。
+镜像实现方式为智能缓存，在镜像站用户首次访问某个 nar 或 narinfo 时，它会被永久缓存在镜像上；
+之后的访问将直接从镜像服务器返回数据。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;如果你使用Guix管理整个操作系统，请修改操作系统配置文件 ，替换
+&lt;li&gt;如果您使用 Guix 管理整个操作系统，请修改操作系统配置文件 ，替换
 &lt;code&gt;substitute-urls&lt;/code&gt; 参数。例如：&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1672,14 +1687,14 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;如果你在别的发行版上使用Guix包管理器，请修改 &lt;code&gt;guix-daemon&lt;/code&gt; 的
+&lt;li&gt;如果您在别的发行版上使用 Guix 包管理器，请修改 &lt;code&gt;guix-daemon&lt;/code&gt; 的
 &lt;code&gt;--substitute-urls&lt;/code&gt; 参数。比如修改 &lt;code&gt;guix-daemon.service&lt;/code&gt; 的 &lt;code&gt;ExecStart&lt;/code&gt; 为：&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;目前 SJTUG guix 镜像支持 install 操作。weather 由于未知原因可能会失败。欢迎大家使用。&lt;/p&gt;
+&lt;p&gt;本文档的编写参考了 &lt;a href=&#34;https://guix.org.cn/wiki/mirror/&#34;&gt;https://guix.org.cn/wiki/mirror/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

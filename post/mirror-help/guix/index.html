@@ -72,14 +72,29 @@
                 </header>
                  
                 <section id="post-body">
-                    <p><a href="https://guix.gnu.org/">GNU/Guix</a>是隶属于GNU项目的自由软件发行版。Guix可以作为独立的操作系统发行版安装在计算机上，可以作为软件包管理器安装在别的Linux发行版上。
+                    
+
+<p><a href="https://guix.gnu.org/">GNU/Guix</a>是隶属于GNU项目的自由软件发行版。Guix可以作为独立的操作系统发行版安装在计算机上，可以作为软件包管理器安装在别的Linux发行版上。
 它的核心是一个函数式软件包管理器，支持事务性的升级、回滚操作。用户可以通过
 <a href="https://www.gnu.org/software/guile/">Guile</a>语言编写配置文件管理操作系统的服务或者管理用户安装的软件。</p>
 
-<p>软件源使用方法：</p>
+<h2 id="git-镜像">Git 镜像</h2>
+
+<p>Git 镜像的地址为 <a href="https://git.sjtu.edu.cn/sjtug/guix.git">https://git.sjtu.edu.cn/sjtug/guix.git</a>。修改 <code>~/.config/guix/channels.scm</code> 文件即可在 <code>guix pull</code> 时使用。</p>
+
+<pre><code>(list (channel
+       (inherit (car %default-channels))
+       (url &quot;https://git.sjtu.edu.cn/sjtug/guix.git&quot;)))
+</code></pre>
+
+<h2 id="substitute-镜像">Substitute 镜像</h2>
+
+<p>镜像地址为 <a href="https://mirrors.sjtug.sjtu.edu.cn/guix">https://mirrors.sjtug.sjtu.edu.cn/guix</a>。
+镜像实现方式为智能缓存，在镜像站用户首次访问某个 nar 或 narinfo 时，它会被永久缓存在镜像上；
+之后的访问将直接从镜像服务器返回数据。</p>
 
 <ul>
-<li>如果你使用Guix管理整个操作系统，请修改操作系统配置文件 ，替换
+<li>如果您使用 Guix 管理整个操作系统，请修改操作系统配置文件 ，替换
 <code>substitute-urls</code> 参数。例如：</li>
 </ul>
 
@@ -95,14 +110,14 @@
 </code></pre>
 
 <ul>
-<li>如果你在别的发行版上使用Guix包管理器，请修改 <code>guix-daemon</code> 的
+<li>如果您在别的发行版上使用 Guix 包管理器，请修改 <code>guix-daemon</code> 的
 <code>--substitute-urls</code> 参数。比如修改 <code>guix-daemon.service</code> 的 <code>ExecStart</code> 为：</li>
 </ul>
 
 <pre><code class="language-conf">ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&quot;https://mirrors.sjtug.sjtu.edu.cn/guix&quot;
 </code></pre>
 
-<p>目前 SJTUG guix 镜像支持 install 操作。weather 由于未知原因可能会失败。欢迎大家使用。</p>
+<p>本文档的编写参考了 <a href="https://guix.org.cn/wiki/mirror/">https://guix.org.cn/wiki/mirror/</a></p>
 
                 </section>
             </article>
