@@ -6,10 +6,22 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 10 Dec 2020 13:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2020 15:30:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Guix 镜像源正式上线</title>
+      <link>https://sjtug.org/post/mirror-news/2020-12-21-release-guix/</link>
+      <pubDate>Mon, 21 Dec 2020 15:30:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2020-12-21-release-guix/</guid>
+      <description>&lt;p&gt;在 Guix 中文社区的大力支持下，我们上线了 Guix 镜像源。Guix 镜像源的实现方式是智能缓存。当镜像站用户第一次请求某个资源时，它会被永久缓存在镜像站服务器上。&lt;/p&gt;
+
+&lt;p&gt;Guix 镜像源分为 git 镜像和 substitute 镜像，请参考帮助文档进行配置。欢迎大家使用。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PyPI 全量同步镜像源重新上线</title>
