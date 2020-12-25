@@ -6,10 +6,20 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 21 Dec 2020 15:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Dec 2020 13:15:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dart 与 Flutter 镜像源已全量同步</title>
+      <link>https://sjtug.org/post/mirror-news/2020-12-25-fix-flutter/</link>
+      <pubDate>Fri, 25 Dec 2020 13:15:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2020-12-25-fix-flutter/</guid>
+      <description>&lt;p&gt;在 Flutter 中文社区的大力支持下，我们修复了 Dart 与 Flutter 镜像访问不稳定的问题。请参考帮助文档进行配置。欢迎大家继续使用 SJTUG 镜像源。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Guix 镜像源正式上线</title>
