@@ -2039,24 +2039,63 @@ deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ parrot main contrib non-free
     </item>
     
     <item>
+      <title>pypi-packages</title>
+      <link>https://sjtug.org/post/mirror-help/pypi-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/pypi-packages/</guid>
+      <description>&lt;p&gt;&lt;del&gt;2019年10月10日起，由于 PyPI 占用过多空间，我们将 PyPI 改为了反代。PyPI 源的服务质量可能有所下降。&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;2020年12月7日起，我们通过智能缓存全量同步了 PyPI。欢迎继续使用。&lt;/p&gt;
+
+&lt;p&gt;PyPI 是 Python 官方的包仓库，可以通过 &lt;code&gt;pip&lt;/code&gt;, &lt;code&gt;easy_install&lt;/code&gt; 等方式从 PyPI 安装 &lt;code&gt;numpy&lt;/code&gt;, &lt;code&gt;tensorflow&lt;/code&gt; 等常用包。&lt;/p&gt;
+
+&lt;p&gt;执行指令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者创建或编辑 &lt;code&gt;~/.config/pip/pip.conf&lt;/code&gt; 文件，加入或修改 &lt;code&gt;index-url&lt;/code&gt; 相关段落为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;[global]
+index-url = https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
+format = columns
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;临时使用：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install -i https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple numpy
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>pypi/web/simple</title>
       <link>https://sjtug.org/post/mirror-help/pypi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/pypi/</guid>
-      <description>&lt;p&gt;&lt;del&gt;2019年10月10日起，由于 Pypi 占用过多空间，我们将 Pypi 改为了反代。Pypi 源的服务质量可能有所下降。&lt;/del&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;del&gt;2019年10月10日起，由于 PyPI 占用过多空间，我们将 PyPI 改为了反代。PyPI 源的服务质量可能有所下降。&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;2020年12月7日起，我们通过智能缓存全量同步了Pypi。欢迎继续使用。&lt;/p&gt;
+&lt;p&gt;2020年12月7日起，我们通过智能缓存全量同步了 PyPI。欢迎继续使用。&lt;/p&gt;
 
-&lt;p&gt;Pypi是Python官方的包仓库，可以通过&lt;code&gt;pip&lt;/code&gt;, &lt;code&gt;easy_install&lt;/code&gt;等方式从pypi安装&lt;code&gt;numpy&lt;/code&gt;, &lt;code&gt;tensorflow&lt;/code&gt;等常用包。&lt;/p&gt;
+&lt;p&gt;PyPI 是 Python 官方的包仓库，可以通过 &lt;code&gt;pip&lt;/code&gt;, &lt;code&gt;easy_install&lt;/code&gt; 等方式从 PyPI 安装 &lt;code&gt;numpy&lt;/code&gt;, &lt;code&gt;tensorflow&lt;/code&gt; 等常用包。&lt;/p&gt;
 
-&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;执行指令&lt;/p&gt;
 
-&lt;p&gt;创建或编辑&lt;code&gt;~/.config/pip/pip.conf&lt;/code&gt;文件，加入或修改&lt;code&gt;index-url&lt;/code&gt;相关段落为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者创建或编辑 &lt;code&gt;~/.config/pip/pip.conf&lt;/code&gt; 文件，加入或修改 &lt;code&gt;index-url&lt;/code&gt; 相关段落为：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;[global]
 index-url = https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
 format = columns
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;临时使用：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install -i https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple numpy
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
