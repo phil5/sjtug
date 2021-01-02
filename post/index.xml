@@ -1763,6 +1763,13 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 之后的访问将直接从镜像服务器返回数据。&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;guix命令支持使用 &lt;code&gt;--substitute-urls&lt;/code&gt; 参数为单个命令的执行临时覆盖substitute服务器，例如：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;guix package -i &amp;lt;package&amp;gt; --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
 &lt;li&gt;如果您使用 Guix 管理整个操作系统，请修改操作系统配置文件 ，替换
 &lt;code&gt;substitute-urls&lt;/code&gt; 参数。例如：&lt;/li&gt;
 &lt;/ul&gt;

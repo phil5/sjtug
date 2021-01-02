@@ -94,6 +94,13 @@
 之后的访问将直接从镜像服务器返回数据。</p>
 
 <ul>
+<li>guix命令支持使用 <code>--substitute-urls</code> 参数为单个命令的执行临时覆盖substitute服务器，例如：</li>
+</ul>
+
+<pre><code class="language-shell">guix package -i &lt;package&gt; --substitute-urls=&quot;https://mirrors.sjtug.sjtu.edu.cn/guix&quot;
+</code></pre>
+
+<ul>
 <li>如果您使用 Guix 管理整个操作系统，请修改操作系统配置文件 ，替换
 <code>substitute-urls</code> 参数。例如：</li>
 </ul>
