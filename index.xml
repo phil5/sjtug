@@ -6,10 +6,22 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Dec 2020 13:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jan 2021 09:55:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增 FreeCAD 镜像与 GitHub Release 智能缓存</title>
+      <link>https://sjtug.org/post/mirror-news/2021-01-02-add-github-release-freecad/</link>
+      <pubDate>Sat, 02 Jan 2021 09:55:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2021-01-02-add-github-release-freecad/</guid>
+      <description>&lt;p&gt;FreeCAD 镜像可以在 &lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/github-release/FreeCAD/FreeCAD/releases/download/?mirror_intel_list&#34;&gt;这里&lt;/a&gt; 访问，我们已经全量同步了近 3 个版本。&lt;/p&gt;
+
+&lt;p&gt;目前 GitHub Release 智能缓存只开放了 FreeCAD 项目的缓存。您可以在 &lt;a href=&#34;https://github.com/sjtug/mirror-requests/issues&#34;&gt;mirror-requests&lt;/a&gt; 中通过 issue 的方式请求添加新的 GitHub Release 镜像。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Dart 与 Flutter 镜像源已全量同步</title>
