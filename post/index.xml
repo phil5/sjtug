@@ -1500,6 +1500,76 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
     </item>
     
     <item>
+      <title>dragonflybsd</title>
+      <link>https://sjtug.org/post/mirror-help/dragonflybsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/dragonflybsd/</guid>
+      <description>
+
+&lt;h2 id=&#34;项目简介&#34;&gt;项目简介&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dragonflybsd.org/&#34;&gt;DragonFly BSD&lt;/a&gt; 隶属于 &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD&#34;&gt;BSD 系统家族&lt;/a&gt;，
+是其中相对小众、但富有特色的一个成员，与 &lt;a href=&#34;https://www.freebsd.org/&#34;&gt;FreeBSD&lt;/a&gt;、
+&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;、&lt;a href=&#34;https://www.netbsd.org/&#34;&gt;NetBSD&lt;/a&gt;
+组成四大 BSD 操作系统。&lt;/p&gt;
+
+&lt;p&gt;自 2003 年从 FreeBSD 4.8 衍生而来，
+DragonFly BSD 对虚拟内存、虚拟文件系统、网络协议栈等关键内核子系统做了大幅修改，
+尽可能地消除了锁和竞争，实现了出色的 SMP 性能。
+项目创始人 Matthew Dillon 自行开发的 &lt;a href=&#34;https://en.wikipedia.org/wiki/HAMMER2&#34;&gt;HAMMER2&lt;/a&gt;
+文件系统是另一个主要特色，该文件系统拥有可媲美 ZFS 的功能和稳定性，但节省内存等资源。
+DragonFly BSD 的其他特色功能还有 vkernel、swapcache、LUKS、TrueCrypt、等等，
+详情可参考：&lt;a href=&#34;https://www.dragonflybsd.org/features/&#34;&gt;主要特性列表&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;DragonFly BSD 的内核简洁小巧，代码整洁，在线手册 (man pages) 清晰，适合学习和研究。
+驱动程序和用户空间工具主要继承自 FreeBSD，同时与 FreeBSD 使用相同的包管理工具
+&lt;a href=&#34;https://github.com/freebsd/pkg&#34;&gt;pkg(8)&lt;/a&gt;，可利用 FreeBSD 丰富全面的文档资源，
+用户体验良好。
+此外，DragonFly BSD 的社区虽小，但很友好。&lt;/p&gt;
+
+&lt;h2 id=&#34;镜像介绍&#34;&gt;镜像介绍&lt;/h2&gt;
+
+&lt;p&gt;SJTUG 镜像是 DragonFly BSD 在中国内地的首个镜像站点，
+依托于华东教育网骨干节点，提供稳定、快速的镜像服务。&lt;/p&gt;
+
+&lt;p&gt;我们的镜像服务目前提供了如下内容：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sjtug.org/dragonflybsd/iso-images/&#34;&gt;安装镜像 (ISO/IMG)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sjtug.org/dragonflybsd/dports/&#34;&gt;预编译软件包&lt;/a&gt;
+(收录了 3 个版本：当前开发版本、当前发布版本、上一发布版本)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+
+&lt;p&gt;创建 pkg(8) 仓库配置文件 &lt;code&gt;/usr/local/etc/pkg/repos/sjtug.conf&lt;/code&gt;，添加以下内容：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# China, Shanghai
+SJTUG: {
+    url:        https://mirror.sjtu.edu.cn/dragonflybsd/dports/${ABI}/LATEST,
+    priority:   10,
+    enabled:    yes
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后执行 &lt;code&gt;pkg update -f&lt;/code&gt; 更新索引即可开始使用了。&lt;/p&gt;
+
+&lt;p&gt;注：仓库的优先级 (&lt;code&gt;priority&lt;/code&gt;) 默认为 0，此处通过设置 &lt;code&gt;priority: 10&lt;/code&gt;
+提高优先级来优先使用 SJTUG 镜像服务。&lt;/p&gt;
+
+&lt;h2 id=&#34;相关链接&#34;&gt;相关链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;官方主页: &lt;a href=&#34;https://www.dragonflybsd.org/&#34;&gt;https://www.dragonflybsd.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;镜像列表: &lt;a href=&#34;https://www.dragonflybsd.org/mirrors/&#34;&gt;https://www.dragonflybsd.org/mirrors/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;系统源码: &lt;a href=&#34;https://gitweb.dragonflybsd.org/dragonfly.git&#34;&gt;官方 Gitweb&lt;/a&gt;, &lt;a href=&#34;https://github.com/DragonFlyBSD/DragonFlyBSD&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/DragonFlyBSD/DragonFlyBSD&#34;&gt;https://github.com/DragonFlyBSD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>fedora</title>
       <link>https://sjtug.org/post/mirror-help/fedora/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1758,7 +1828,7 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 
 &lt;h2 id=&#34;substitute-镜像&#34;&gt;Substitute 镜像&lt;/h2&gt;
 
-&lt;p&gt;镜像地址为 &lt;a href=&#34;https://mirrors.sjtug.sjtu.edu.cn/guix&#34;&gt;https://mirrors.sjtug.sjtu.edu.cn/guix&lt;/a&gt;。
+&lt;p&gt;镜像地址为 &lt;a href=&#34;https://mirror.sjtu.edu.cn/guix&#34;&gt;https://mirror.sjtu.edu.cn/guix&lt;/a&gt;。
 镜像实现方式为智能缓存，在镜像站用户首次访问某个 nar 或 narinfo 时，它会被永久缓存在镜像上；
 之后的访问将直接从镜像服务器返回数据。&lt;/p&gt;
 
@@ -1766,7 +1836,7 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 &lt;li&gt;guix命令支持使用 &lt;code&gt;--substitute-urls&lt;/code&gt; 参数为单个命令的执行临时覆盖substitute服务器，例如：&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;guix package -i &amp;lt;package&amp;gt; --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;guix package -i &amp;lt;package&amp;gt; --substitute-urls=&amp;quot;https://mirror.sjtu.edu.cn/guix&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
@@ -1779,7 +1849,7 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
               (guix-service-type
                config =&amp;gt; (guix-configuration
                           (inherit config)
-                          (substitute-urls &#39;(&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;quot;
+                          (substitute-urls &#39;(&amp;quot;https://mirror.sjtu.edu.cn/guix&amp;quot;
                                              &amp;quot;https://ci.guix.gnu.org&amp;quot;))))))
   ...
   )
@@ -1790,7 +1860,7 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 &lt;code&gt;--substitute-urls&lt;/code&gt; 参数。比如修改 &lt;code&gt;guix-daemon.service&lt;/code&gt; 的 &lt;code&gt;ExecStart&lt;/code&gt; 为：&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&amp;quot;https://mirror.sjtu.edu.cn/guix&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;本文档的编写参考了 &lt;a href=&#34;https://guix.org.cn/wiki/mirror/&#34;&gt;https://guix.org.cn/wiki/mirror/&lt;/a&gt;&lt;/p&gt;
