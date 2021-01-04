@@ -382,6 +382,10 @@
   </url>
   
   <url>
+    <loc>https://sjtug.org/post/mirror-help/dragonflybsd/</loc>
+  </url>
+  
+  <url>
     <loc>https://sjtug.org/post/mirror-help/fedora/</loc>
   </url>
   
@@ -463,6 +467,10 @@
   
   <url>
     <loc>https://sjtug.org/post/mirror-help/pypi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sjtug.org/post/mirror-help/pytorch-wheels/</loc>
   </url>
   
   <url>
