@@ -634,90 +634,29 @@ SJTUG: {
     </item>
     
     <item>
-      <title>fedora</title>
+      <title>fedora/linux</title>
       <link>https://sjtug.org/post/mirror-help/fedora/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sjtug.org/post/mirror-help/fedora/</guid>
-      <description>&lt;p&gt;Fedora项目是一个由红帽公司所赞助，以统筹Fedora Linux操作系统开发的社区。Fedora 项目在建设开源软件社区的同时构建了一个被称为&amp;rdquo;Fedora&amp;rdquo;的 GNU/Linux 发行版。&lt;/p&gt;
+      <description>&lt;p&gt;Fedora 项目是一个由红帽公司所赞助，以统筹 Fedora Linux 操作系统开发的社区。
+Fedora 项目在建设开源软件社区的同时构建了一个被称为&amp;rdquo;Fedora&amp;rdquo;的 GNU/Linux 发行版。&lt;/p&gt;
 
-&lt;p&gt;使用方法：
-1. 备份旧的repoList：&lt;/p&gt;
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;p&gt;备份旧的 repo list&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mv /etc/yum.repos.d/fedora.repo /etc/yum.repos.d/fedora.repo.backup 
 mv /etc/yum.repos.d/fedora-updates.repo /etc/yum.repos.d/fedora-updates.repo.backup 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ol&gt;
-&lt;li&gt;把&lt;code&gt;/etc/yum.repos.d/fedora.repo&lt;/code&gt;换成以下内容：&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;接着，运行一键替换指令。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[fedora] 
-name=Fedora $releasever - $basearch - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/releases/$releasever/Everything/$basearch/os/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;amp;arch=$basearch 
-enabled=1 
-metadata_expire=7d 
-gpgcheck=1 
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
- 
-[fedora-debuginfo] 
-name=Fedora $releasever - $basearch - Debug - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/releases/$releasever/Everything/$basearch/debug/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;amp;arch=$basearch 
-enabled=0 
-metadata_expire=7d 
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
- 
-[fedora-source] 
-name=Fedora $releasever - Source - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/releases/$releasever/Everything/source/SRPMS/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;amp;arch=$basearch 
-enabled=0 
-metadata_expire=7d 
-gpgcheck=1 
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/metalink/#metalink/g&#39; /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
+sed -i &#39;s|#baseurl=http://download.example/pub/|baseurl=http://mirror.sjtu.edu.cn/|g&#39; /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ol&gt;
-&lt;li&gt;把&lt;code&gt;/etc/yum.repos.d/fedora-updates.repo&lt;/code&gt;换成以下内容：&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;[updates]
-name=Fedora $releasever - $basearch - Updates - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/updates/$releasever/$basearch/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;amp;arch=$basearch 
-enabled=1 
-gpgcheck=1 
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
- 
-[updates-debuginfo] 
-name=Fedora $releasever - $basearch - Updates - Debug - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/updates/$releasever/$basearch/debug/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;amp;arch=$basearch 
-enabled=0 
-gpgcheck=1 
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
- 
-[updates-source] 
-name=Fedora $releasever - Updates Source - SJTUG
-failovermethod=priority 
-baseurl=https://mirrors.sjtug.sjtu.edu.cn/fedora/linux/updates/$releasever/SRPMS/ 
-#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;amp;arch=$basearch 
-enabled=0 
-gpgcheck=1 
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;运行&lt;code&gt;dnf makecache&lt;/code&gt;生成缓存&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;最后运行 &lt;code&gt;dnf makecache&lt;/code&gt; 生成缓存&lt;/p&gt;
 </description>
     </item>
     
