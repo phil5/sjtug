@@ -600,8 +600,8 @@ DragonFly BSD 的其他特色功能还有 vkernel、swapcache、LUKS、TrueCrypt
 &lt;p&gt;我们的镜像服务目前提供了如下内容：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sjtug.org/dragonflybsd/iso-images/&#34;&gt;安装镜像 (ISO/IMG)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sjtug.org/dragonflybsd/dports/&#34;&gt;预编译软件包&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirror.sjtu.edu.cn/dragonflybsd/iso-images/&#34;&gt;安装镜像 (ISO/IMG)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirror.sjtu.edu.cn/dragonflybsd/dports/&#34;&gt;预编译软件包&lt;/a&gt;
 (收录了 3 个版本：当前开发版本、当前发布版本、上一发布版本)&lt;/li&gt;
 &lt;/ul&gt;
 
