@@ -564,7 +564,7 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
     </item>
     
     <item>
-      <title>dragonflybsd</title>
+      <title>dragonflybsd/dports</title>
       <link>https://sjtug.org/post/mirror-help/dragonflybsd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
