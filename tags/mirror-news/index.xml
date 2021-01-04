@@ -6,10 +6,62 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Jan 2021 09:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 16:30:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增 apache, DragonFlyBSD 等镜像</title>
+      <link>https://sjtug.org/post/mirror-news/2020-01-04-siyuan-available/</link>
+      <pubDate>Mon, 04 Jan 2021 16:30:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2020-01-04-siyuan-available/</guid>
+      <description>&lt;p&gt;SJTUG 的新服务器“思源 (Siyuan)”服务器已经在 &lt;a href=&#34;https://mirror.sjtu.edu.cn&#34;&gt;https://mirror.sjtu.edu.cn&lt;/a&gt; 上线。
+该服务器兼容原 &lt;a href=&#34;https://ftp.sjtu.edu.cn&#34;&gt;ftp.sjtu.edu.cn&lt;/a&gt; 服务器提供的服务，并在此基础上增加了许多软件源镜像。
+原先的 &lt;a href=&#34;https://ftp.sjtu.edu.cn&#34;&gt;ftp.sjtu.edu.cn&lt;/a&gt; 将在近几个月内解析至 SJTUG 思源镜像服务器。&lt;/p&gt;
+
+&lt;p&gt;新服务器兼容以下 18 个 &lt;a href=&#34;https://ftp.sjtu.edu.cn&#34;&gt;ftp.sjtu.edu.cn&lt;/a&gt; 上的软件源镜像。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;centos&lt;/li&gt;
+&lt;li&gt;debian&lt;/li&gt;
+&lt;li&gt;debian-cd&lt;/li&gt;
+&lt;li&gt;debian-security&lt;/li&gt;
+&lt;li&gt;deepin&lt;/li&gt;
+&lt;li&gt;deepin-cd&lt;/li&gt;
+&lt;li&gt;fedora/linux&lt;/li&gt;
+&lt;li&gt;fedora/epel&lt;/li&gt;
+&lt;li&gt;fedora-secondary&lt;/li&gt;
+&lt;li&gt;linuxmint&lt;/li&gt;
+&lt;li&gt;linuxmint-cd&lt;/li&gt;
+&lt;li&gt;mageia&lt;/li&gt;
+&lt;li&gt;opensuse&lt;/li&gt;
+&lt;li&gt;openvz&lt;/li&gt;
+&lt;li&gt;remi&lt;/li&gt;
+&lt;li&gt;scientific&lt;/li&gt;
+&lt;li&gt;ubuntu&lt;/li&gt;
+&lt;li&gt;ubuntu-cd&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;新服务器新增了以下 8 个镜像。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;apache&lt;/li&gt;
+&lt;li&gt;docker-ce&lt;/li&gt;
+&lt;li&gt;ubuntu-cdimage&lt;/li&gt;
+&lt;li&gt;ubuntu-ports&lt;/li&gt;
+&lt;li&gt;openwrt&lt;/li&gt;
+&lt;li&gt;rpmfusion&lt;/li&gt;
+&lt;li&gt;dragonflybsd/dports&lt;/li&gt;
+&lt;li&gt;dragonflybsd/iso-images&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;与此同时，我们也上线了大量常用 git 仓库镜像。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家继续使用 SJTUG 镜像站。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>新增 FreeCAD 镜像与 GitHub Release 智能缓存</title>
