@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>GPG Sign Party &amp; Yubikey安利 &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>centos &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,25 +52,19 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>GPG Sign Party &amp; Yubikey安利</h1>
+                    <h1>centos</h1>
                     <h2 class="headline">
-                    March 9, 2017 
+                    January 1, 0001 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
-                    
-                    <br>
-                     <i class="fa fa-map-marker" aria-hidden="true"></i> Main Library E216 
-                     <i class="fa fa-calendar" aria-hidden="true"></i> 2017-03-12T15:00:00&#43;08:00 
                     
                     <br>
                     
                     
                         
-                            <a href="https://sjtug.org/tags/news">news</a>
-                        
-                            <a href="https://sjtug.org/tags/sharing">sharing</a>
+                            <a href="https://sjtug.org/tags/mirror-help">mirror-help</a>
                         
                     
                     
@@ -78,10 +72,12 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>本周日(12日)下午3点到5点，在新图E216将举行GPG Sign Party&amp;Yubikey安利活动。将手把手教大家签发/交换密钥与加密、签名信息，欢迎参加！</p>
+                    <p>使用方法：运行下面的指令一键替换并备份。</p>
 
-<p>校内同学点击<a href="http://studyroom.lib.sjtu.edu.cn/reserve_plus.asp">这里加入学习室</a>。
-申请单号94388，密码165165</p>
+<pre><code class="language-bash">sed -e 's/mirrorlist/#mirrorlist/g' -e 's|#baseurl=http://mirror.centos.org/|baseurl=http://mirror.sjtu.edu.cn/|g' -i.bak /etc/yum.repos.d/&lt;需要替换的文件&gt;
+</code></pre>
+
+<p>最后运行 <code>dnf makecache</code> 生成缓存</p>
 
                 </section>
             </article>
@@ -94,7 +90,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2f2017-03-09-gpg-sign-party%2f - GPG%20Sign%20Party%20%26%20Yubikey%e5%ae%89%e5%88%a9 by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fcentos%2f - centos by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

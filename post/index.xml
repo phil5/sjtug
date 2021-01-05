@@ -6,10 +6,49 @@
     <description>Recent content in Posts on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Jan 2021 16:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 22:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>fedora-ostree</title>
+      <link>https://sjtug.org/post/mirror-help/fedora-ostree/</link>
+      <pubDate>Mon, 04 Jan 2021 22:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/fedora-ostree/</guid>
+      <description>&lt;p&gt;fedora-ostree 是 Fedora Silverblue (原 Atomic Workstation) 的智能缓存。
+Fedora Silverblue 通过 rpm-ostree 管理整个系统。
+当您第一次请求镜像中的资源时，如果文件没有被镜像服务器缓存，我们会将您重定向回原站，
+并在后台进行缓存。目前镜像服务器上已经预先缓存了所有 fedora-ostree 仓库的分支。&lt;/p&gt;
+
+&lt;p&gt;使用方法：编辑 &lt;code&gt;/etc/ostree/remotes.d/fedora.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;[remote &amp;quot;fedora&amp;quot;]
+url=https://mirror.sjtu.edu.cn/fedora-ostree
+gpg-verify=true
+gpgkeypath=/etc/pki/rpm-gpg/
+# contenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>flathub</title>
+      <link>https://sjtug.org/post/mirror-help/flathub/</link>
+      <pubDate>Mon, 04 Jan 2021 22:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/flathub/</guid>
+      <description>&lt;p&gt;Flathub 镜像是 &lt;a href=&#34;https://flathub.org&#34;&gt;flathub.org&lt;/a&gt; 的智能缓存。当您第一次请求镜像中的资源时，
+如果文件没有被镜像服务器缓存，我们会将您重定向回原站，并在后台进行缓存。
+目前镜像服务器上已经预先缓存了所有 Flathub 软件的分支。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>新增 apache, DragonFlyBSD 等镜像</title>
@@ -1503,6 +1542,21 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
     </item>
     
     <item>
+      <title>centos</title>
+      <link>https://sjtug.org/post/mirror-help/centos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/centos/</guid>
+      <description>&lt;p&gt;使用方法：运行下面的指令一键替换并备份。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -e &#39;s/mirrorlist/#mirrorlist/g&#39; -e &#39;s|#baseurl=http://mirror.centos.org/|baseurl=http://mirror.sjtu.edu.cn/|g&#39; -i.bak /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后运行 &lt;code&gt;dnf makecache&lt;/code&gt; 生成缓存&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>dart-pub</title>
       <link>https://sjtug.org/post/mirror-help/dart-packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1630,18 +1684,9 @@ SJTUG: {
       <description>&lt;p&gt;Fedora 项目是一个由红帽公司所赞助，以统筹 Fedora Linux 操作系统开发的社区。
 Fedora 项目在建设开源软件社区的同时构建了一个被称为&amp;rdquo;Fedora&amp;rdquo;的 GNU/Linux 发行版。&lt;/p&gt;
 
-&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;使用方法：运行下面的指令一键替换并备份。&lt;/p&gt;
 
-&lt;p&gt;备份旧的 repo list&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mv /etc/yum.repos.d/fedora.repo /etc/yum.repos.d/fedora.repo.backup 
-mv /etc/yum.repos.d/fedora-updates.repo /etc/yum.repos.d/fedora-updates.repo.backup 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;接着，运行一键替换指令。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/metalink/#metalink/g&#39; /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
-sed -i &#39;s|#baseurl=http://download.example/pub/|baseurl=http://mirror.sjtu.edu.cn/|g&#39; /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -e &#39;s/metalink/#metalink/g&#39; -e &#39;s|#baseurl=http://download.example/pub/|baseurl=http://mirror.sjtu.edu.cn/|g&#39; -i.bak /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;最后运行 &lt;code&gt;dnf makecache&lt;/code&gt; 生成缓存&lt;/p&gt;
