@@ -554,6 +554,31 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
     </item>
     
     <item>
+      <title>blackarch</title>
+      <link>https://sjtug.org/post/mirror-help/blackarch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/blackarch/</guid>
+      <description>&lt;p&gt;BlackArch 是一款基于 ArchLinux 的为渗透测试及安全研究人员开发的发行版，相当于 Arch 版的 Kali。可以当做现有 Arch 系统的非官方用户存储库。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;p&gt;在现有 Arch 系统中，编辑&lt;code&gt;/etc/pacman.conf&lt;/code&gt;，在末尾添加两行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[blackarch]
+Server = https://mirror.sjtu.edu.cn/blackarch/$repo/os/$arch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;由于一些软件依赖32位的库，需要取消掉&lt;code&gt;/etc/pacman.conf&lt;/code&gt;中&lt;code&gt;multilib&lt;/code&gt;的注释，详见&lt;a href=&#34;https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib&#34;&gt;https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;之后，请执行下面的命令安装 blackarch-keyring 包导入 GPG key。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo pacman -Sy blackarch-keyring
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>centos</title>
       <link>https://sjtug.org/post/mirror-help/centos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
