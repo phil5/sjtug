@@ -2103,6 +2103,38 @@ deb http://mirrors.sjtug.sjtu.edu.cn/mx-packages/mx/testrepo test
     </item>
     
     <item>
+      <title>nix-channels/store</title>
+      <link>https://sjtug.org/post/mirror-help/nix-channels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/nix-channels/</guid>
+      <description>&lt;p&gt;Nix是一个支持Linux和macOS的函数式包管理器，具有原子更新、依赖隔离、构建尽可能可复现等特点。&lt;/p&gt;
+
+&lt;p&gt;Nixpkgs是Nix包管理器对应的软件发行版，使用Nix函数式语言编写，除软件包外提供用于软件定制、构建、开发环境配置的工具。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;p&gt;单独安装的Nix：编辑配置文件（系统配置位于&lt;code&gt;/etc/nix/nix.conf&lt;/code&gt;，用户配置位于&lt;code&gt;~/.config/nix/nix.conf&lt;/code&gt;）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;substituters = https://mirror.sjtu.edu.cn/nix-channels/store https://cache.nixos.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;单独安装的Nix在更改完配置文件之后需要重启nix-daemon才能应用配置&lt;/p&gt;
+
+&lt;p&gt;NixOS与nix-darwin：编辑配置文件（NixOS配置位于&lt;code&gt;/etc/nixos/configuration.nix&lt;/code&gt;，nix-darwin配置位于&lt;code&gt;$HOME/.nixpkgs/darwin-configuration.nix&lt;/code&gt;）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nix&#34;&gt;{ config, lib, pkgs, ... }:
+{
+  ...
+  nix.binaryCaches = lib.mkForce [ &amp;quot;https://mirror.sjtu.edu.cn/nix-channels/store&amp;quot; &amp;quot;https://cache.nixos.org&amp;quot; ];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NixOS与nix-darwin在更改完配置之后需要switch到新配置后生效&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>nodejs-release</title>
       <link>https://sjtug.org/post/mirror-help/nodejs-release/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
