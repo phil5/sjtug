@@ -83,41 +83,41 @@
 <p>编辑 <code>~/.condarc</code></p>
 
 <pre><code>default_channels:
-  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r
-  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/r
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main
 custom_channels:
-  conda-forge: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
-  pytorch: https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/
+  conda-forge: https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/
+  pytorch: https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/
 channels:
   - defaults
 </code></pre>
 
 <p>在 <code>custom_channels</code> 中您可以添加下面所列的其他第三方源。我们建议您使用上面的方法配置，而非执行下面的指令。</p>
 
-<p>您也可以使用<code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/{{你所需要的包名}}</code>来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：</p>
+<p>您也可以使用<code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/{{你所需要的包名}}</code>来将SJTUG源添加作为这个包的上游。目前镜像的包与安装命令包括：</p>
 
 <ul>
 <li><strong>官方源</strong>:
 
 <ul>
-<li><code>pkgs/free</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/free</code></li>
-<li><code>pkgs/main</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main</code></li>
-<li><code>pkgs/mro</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/mro</code></li>
-<li><code>pkgs/msys2</code>: <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/msys2</code></li>
-<li><code>pkgs/pro</code>: (deprecated) <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/pro</code></li>
-<li><code>pkgs/r</code>: (empty) <code>conda config --add channels https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r</code></li>
+<li><code>pkgs/free</code>: <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free</code></li>
+<li><code>pkgs/main</code>: <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main</code></li>
+<li><code>pkgs/mro</code>: <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/mro</code></li>
+<li><code>pkgs/msys2</code>: <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/msys2</code></li>
+<li><code>pkgs/pro</code>: (deprecated) <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/pro</code></li>
+<li><code>pkgs/r</code>: (empty) <code>conda config --add channels https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/r</code></li>
 </ul></li>
 <li><strong>第三方源</strong>:
 
 <ul>
-<li><code>cloud/bioconda</code>: <code>conda config --set custom_channels.bioconda https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/conda-forge</code>: <code>conda config --set custom_channels.conda-forge https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/menpo</code>: <code>conda config --set custom_channels.menpo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/soumith</code>: <code>conda config --set custom_channels.soumith https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/viscid-hub</code>: <code>conda config --set custom_channels.viscid-hub https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/atztogo</code>: <code>conda config --set custom_channels.atztogo https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/pytorch</code>: <code>conda config --set custom_channels.pytorch https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
-<li><code>cloud/pytorch-test</code>: <code>conda config --set custom_channels.pytorch-test https://anaconda.mirrors.sjtug.sjtu.edu.cn/cloud/</code></li>
+<li><code>cloud/bioconda</code>: <code>conda config --set custom_channels.bioconda https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/conda-forge</code>: <code>conda config --set custom_channels.conda-forge https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/menpo</code>: <code>conda config --set custom_channels.menpo https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/soumith</code>: <code>conda config --set custom_channels.soumith https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/viscid-hub</code>: <code>conda config --set custom_channels.viscid-hub https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/atztogo</code>: <code>conda config --set custom_channels.atztogo https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/pytorch</code>: <code>conda config --set custom_channels.pytorch https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
+<li><code>cloud/pytorch-test</code>: <code>conda config --set custom_channels.pytorch-test https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/</code></li>
 </ul></li>
 </ul>
 
