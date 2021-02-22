@@ -867,6 +867,53 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
     </item>
     
     <item>
+      <title>git/ohmyzsh.git</title>
+      <link>https://sjtug.org/post/mirror-help/ohmyzsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/ohmyzsh/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://ohmyz.sh/&#34;&gt;Oh My Zsh&lt;/a&gt; 是一个由社区驱动的开源框架，用于管理 &lt;a href=&#34;https://www.zsh.org/&#34;&gt;zsh&lt;/a&gt; 的配置。&lt;/p&gt;
+
+&lt;h2 id=&#34;首次安装-oh-my-zsh&#34;&gt;首次安装 Oh My Zsh&lt;/h2&gt;
+
+&lt;p&gt;首先，需要确保系统中安装了 zsh 和 git，然中在终端运行以下命令其中之一：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;方法&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;命令&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;curl&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;REPO=sjtug/ohmyzsh REMOTE=https://git.sjtu.edu.cn/${REPO}.git sh -c &amp;quot;$(curl -fsSL https://git.sjtu.edu.cn/sjtug/ohmyzsh/-/raw/master/tools/install.sh\?inline\=false)&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;wget&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;REPO=sjtug/ohmyzsh REMOTE=https://git.sjtu.edu.cn/${REPO}.git sh -c &amp;quot;$(wget -O- https://git.sjtu.edu.cn/sjtug/ohmyzsh/-/raw/master/tools/install.sh\?inline\=false)&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;fetch&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;REPO=sjtug/ohmyzsh REMOTE=https://git.sjtu.edu.cn/${REPO}.git sh -c &amp;quot;$(fetch -o - https://git.sjtu.edu.cn/sjtug/ohmyzsh/-/raw/master/tools/install.sh\?inline\=false)&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;替换现有仓库上游&#34;&gt;替换现有仓库上游&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git -C $ZSH remote set-url origin https://git.sjtu.edu.cn/sjtug/ohmyzsh.git
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>google-fonts</title>
       <link>https://sjtug.org/post/mirror-help/google-fonts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
