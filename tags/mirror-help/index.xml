@@ -6,10 +6,32 @@
     <description>Recent content in Mirror Help on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Jan 2021 22:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Feb 2021 11:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-help/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>qt</title>
+      <link>https://sjtug.org/post/mirror-help/qt/</link>
+      <pubDate>Mon, 22 Feb 2021 11:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/qt/</guid>
+      <description>&lt;p&gt;通常来说，Qt 在线安装器会自动选择最近的镜像，因此无需做特殊设置即可使用 SJTUG Qt 镜像。&lt;/p&gt;
+
+&lt;p&gt;你可以通过下面的方法手动指定 Qt 镜像。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;使用离线安装器安装：在 &lt;a href=&#34;https://www.qt.io/offline-installers&#34;&gt;Offline Installers&lt;/a&gt; 页面中找到需要下载的版本，并将链接中的
+&lt;code&gt;http://download.qt.io&lt;/code&gt; 替换为 &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/qt&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;使用在线安装器安装：参考 &lt;a href=&#34;https://wiki.qt.io/Online_Installer_4.x#Selecting_a_mirror_for_opensource&#34;&gt;Qt Wiki&lt;/a&gt;，
+在命令行中给安装器提供 &lt;code&gt;--mirror https://mirrors.sjtug.sjtu.edu.cn/qt&lt;/code&gt; 的参数。比如在 macOS 上：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;./qt-unified-macOS-x86_64-4.0.1-1-online.app/Contents/MacOS/qt-unified-macOS-x86_64-4.0.1-1-online --mirror https://mirrors.sjtug.sjtu.edu.cn/qt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>fedora-ostree</title>
