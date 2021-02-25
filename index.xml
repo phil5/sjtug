@@ -1989,11 +1989,11 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 
 &lt;h2 id=&#34;git-镜像&#34;&gt;Git 镜像&lt;/h2&gt;
 
-&lt;p&gt;Git 镜像的地址为 &lt;a href=&#34;https://git.sjtu.edu.cn/sjtug/guix.git&#34;&gt;https://git.sjtu.edu.cn/sjtug/guix.git&lt;/a&gt;。修改 &lt;code&gt;~/.config/guix/channels.scm&lt;/code&gt; 文件即可在 &lt;code&gt;guix pull&lt;/code&gt; 时使用。&lt;/p&gt;
+&lt;p&gt;Git 镜像的地址为 &lt;a href=&#34;https://mirror.sjtu.edu.cn/git/guix.git&#34;&gt;https://mirror.sjtu.edu.cn/git/guix.git&lt;/a&gt; 。修改 &lt;code&gt;~/.config/guix/channels.scm&lt;/code&gt; 文件即可在 &lt;code&gt;guix pull&lt;/code&gt; 时使用。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(list (channel
        (inherit (car %default-channels))
-       (url &amp;quot;https://git.sjtu.edu.cn/sjtug/guix.git&amp;quot;)))
+       (url &amp;quot;https://mirror.sjtu.edu.cn/git/guix.git&amp;quot;)))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;substitute-镜像&#34;&gt;Substitute 镜像&lt;/h2&gt;

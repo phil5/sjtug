@@ -80,11 +80,11 @@
 
 <h2 id="git-镜像">Git 镜像</h2>
 
-<p>Git 镜像的地址为 <a href="https://git.sjtu.edu.cn/sjtug/guix.git">https://git.sjtu.edu.cn/sjtug/guix.git</a>。修改 <code>~/.config/guix/channels.scm</code> 文件即可在 <code>guix pull</code> 时使用。</p>
+<p>Git 镜像的地址为 <a href="https://mirror.sjtu.edu.cn/git/guix.git">https://mirror.sjtu.edu.cn/git/guix.git</a> 。修改 <code>~/.config/guix/channels.scm</code> 文件即可在 <code>guix pull</code> 时使用。</p>
 
 <pre><code>(list (channel
        (inherit (car %default-channels))
-       (url &quot;https://git.sjtu.edu.cn/sjtug/guix.git&quot;)))
+       (url &quot;https://mirror.sjtu.edu.cn/git/guix.git&quot;)))
 </code></pre>
 
 <h2 id="substitute-镜像">Substitute 镜像</h2>
