@@ -2277,6 +2277,61 @@ registry=https://mirrors.sjtug.sjtu.edu.cn/npm-registry
     </item>
     
     <item>
+      <title>openEuler</title>
+      <link>https://sjtug.org/post/mirror-help/openeuler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/openeuler/</guid>
+      <description>
+
+&lt;p&gt;openEuler 是一个开源、免费的 Linux 发行版，将通过开放的社区形式与全球的开发者共同构建一个开放、
+多元和架构包容的软件生态体系。&lt;/p&gt;
+
+&lt;p&gt;同时，openEuler 也是一个创新的平台，鼓励任何人在该平台上提出新想法、开拓新思路、实践新方案。&lt;/p&gt;
+
+&lt;h2 id=&#34;配置方法&#34;&gt;配置方法&lt;/h2&gt;
+
+&lt;p&gt;openEuler 源包含多个版本，假定您需要使用 openEuler-20.09 版本，在 yum 源目录(&lt;code&gt;/etc/yum.repos.d/&lt;/code&gt;)下新增 openEuler.repo 文件，
+注意文件中的 &lt;code&gt;openEuler-20.09&lt;/code&gt; 路径:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[OS]
+name=OS
+baseurl=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/OS/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/OS/$basearch/RPM-GPG-KEY-openEuler
+[everything]
+name=everything
+baseurl=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/everything/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/everything/$basearch/RPM-GPG-KEY-openEuler
+[EPOL]
+name=EPOL
+baseurl=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/RPM-GPG-KEY-openEuler
+[debuginfo]
+name=debuginfo
+baseurl=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/debuginfo/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/debuginfo/$basearch/RPM-GPG-KEY-openEuler
+[source]
+name=source
+baseurl=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/source/
+enabled=1
+gpgcheck=1 
+gpgkey=https://mirror.sjtu.edu.cn/openeuler/openEuler-20.09/source/RPM-GPG-KEY-openEuler
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;正常执行 &lt;code&gt;yum update&lt;/code&gt; 和 &lt;code&gt;yum install&lt;/code&gt; 即可。如果您在使用的过程中遇到任何问题，可以直接联系 openEuler
+社区 &lt;a href=&#34;mailto:admin@openeuler.io&#34;&gt;admin@openeuler.io&lt;/a&gt;，也可以通过 GitHub 向 SJTUG 反馈 bug。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>packagist</title>
       <link>https://sjtug.org/post/mirror-help/packagist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
