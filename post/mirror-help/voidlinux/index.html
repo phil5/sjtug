@@ -78,7 +78,7 @@
 
 <pre><code class="language-sh">mkdir -p /etc/xbps.d
 cp /usr/share/xbps.d/*-repository-*.conf /etc/xbps.d/
-sed -i 's|https://alpha.de.repo.voidlinux.org|https://mirror.sjtu.edu.cn/voidlinux/|g' /etc/xbps.d/*-repository-*.conf
+sed -i 's|https://alpha.de.repo.voidlinux.org|https://mirror.sjtu.edu.cn/voidlinux|g' /etc/xbps.d/*-repository-*.conf
 </code></pre>
 
 <p>之后可用 <code>xbps-query -L</code> 检查是否正确替换。</p>

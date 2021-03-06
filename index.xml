@@ -2725,7 +2725,7 @@ deb https://mirrors.sjtug.sjtu.edu.cn/ubuntu focal-security main restricted univ
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mkdir -p /etc/xbps.d
 cp /usr/share/xbps.d/*-repository-*.conf /etc/xbps.d/
-sed -i &#39;s|https://alpha.de.repo.voidlinux.org|https://mirror.sjtu.edu.cn/voidlinux/|g&#39; /etc/xbps.d/*-repository-*.conf
+sed -i &#39;s|https://alpha.de.repo.voidlinux.org|https://mirror.sjtu.edu.cn/voidlinux|g&#39; /etc/xbps.d/*-repository-*.conf
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;之后可用 &lt;code&gt;xbps-query -L&lt;/code&gt; 检查是否正确替换。&lt;/p&gt;
