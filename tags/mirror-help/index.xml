@@ -584,6 +584,39 @@ Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch
     </item>
     
     <item>
+      <title>bioconductor</title>
+      <link>https://sjtug.org/post/mirror-help/bioconductor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/bioconductor/</guid>
+      <description>&lt;p&gt;Bioconductor 为高通量基因组数据的分析和可视化提供开源工具。Bioconductor多数软件包采用R统计编程语言开发。Bioconductor 每年释出两个版本，并有活跃的用户社区。&lt;/p&gt;
+
+&lt;p&gt;使用方法：
+Bioconductor 镜像源配置文件之一是 .Rprofile (linux 下位于 &lt;code&gt;~/.Rprofile&lt;/code&gt;, Windows 下位于 &lt;code&gt;~\library\base\R\Rprofile&lt;/code&gt; )。&lt;/p&gt;
+
+&lt;p&gt;在该文件末尾添加如下语句或在R/RStudio终端下键入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;options(BioC_mirror=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/bioconductor&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;options(BioC_mirror=&amp;quot;https://mirror.sjtu.edu.cn/bioconductor&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;即可使用该 Bioconductor 镜像源安装 Bioconductor 软件包。
+命令如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (!requireNamespace(&amp;quot;BiocManager&amp;quot;, quietly = TRUE))
+    install.packages(&amp;quot;BiocManager&amp;quot;)
+BiocManager::install(&amp;quot;$package_name&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;请访问&lt;a href=&#34;http://bioconductor.org/&#34;&gt;官方网站&lt;/a&gt;获取更多信息。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>blackarch</title>
       <link>https://sjtug.org/post/mirror-help/blackarch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
