@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>maven-central &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>新增 Bioconductor, openEuler, Void Linux, Wireshark 镜像 &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,19 +52,19 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>maven-central</h1>
+                    <h1>新增 Bioconductor, openEuler, Void Linux, Wireshark 镜像</h1>
                     <h2 class="headline">
-                    January 1, 0001 
+                    March 6, 2021 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
                     
                     <br>
                     
                     
                         
-                            <a href="https://sjtug.org/tags/mirror-help">mirror-help</a>
+                            <a href="https://sjtug.org/tags/mirror-news">mirror-news</a>
                         
                     
                     
@@ -72,22 +72,24 @@
                 </header>
                  
                 <section id="post-body">
-                    <p>Apache Maven仓库存放了可用于Maven的大量软件包（特别是Java软件）。目前本镜像为 <a href="http://repo.maven.apache.org/maven2/">http://repo.maven.apache.org/maven2/</a> 的反向代理，能够加速安装。</p>
+                    <p>近期，SJTUG 的镜像同步工具 mirror-clone <a href="https://github.com/sjtug/mirror-clone/pull/57">添加了 Rsync 支持</a>。
+在此基础上，我们增加了 Bioconductor, Void Linux 和 Wireshark 镜像。这三个镜像都存储在 SJTU 对象存储服务上。
+从这些软件源下载软件时，您会被自动重定向到 SJTU 对象存储服务。</p>
 
-<p>使用方法：</p>
+<p>我们还增加了 openEuler 镜像，存储在思源 (mirror.sjtu.edu.cn) 服务器上。</p>
 
-<p>修改Maven根目录下的<code>conf/setting.xml</code>，增加一节<code>&lt;mirror /&gt;</code>，具体如下：</p>
+<p>您可以参阅镜像站首页的帮助文档，配置相关软件使用 SJTUG 镜像。</p>
 
-<pre><code class="language-xml">&lt;mirrors&gt;
-    &lt;!-- Other mirrors... --&gt;
-    &lt;mirror&gt;
-        &lt;id&gt;sjtugmaven&lt;/id&gt;
-        &lt;name&gt;sjtug maven&lt;/name&gt;
-        &lt;url&gt;https://mirrors.sjtug.sjtu.edu.cn/maven-central/&lt;/url&gt;
-        &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
-    &lt;/mirror&gt;
-&lt;/mirrors&gt;
-</code></pre>
+<p>与此同时，由于致远服务器压力过大，我们将部分软件源迁移到了其他存储中。您可以调整相关软件的设置，以取得最好的使用体验。</p>
+
+<ul>
+<li>manjaro 迁移到了思源服务器。</li>
+<li>archlinux 迁移到了思源服务器。</li>
+<li>ctan 迁移到了思源服务器。</li>
+<li>anaconda 迁移到了 SJTU 对象存储服务。</li>
+</ul>
+
+<p>欢迎大家使用。</p>
 
                 </section>
             </article>
@@ -100,7 +102,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fmaven-central%2f - maven-central by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-news%2f2021-03-06-new-mirrors%2f - %e6%96%b0%e5%a2%9e%20Bioconductor%2c%20openEuler%2c%20Void%20Linux%2c%20Wireshark%20%e9%95%9c%e5%83%8f by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

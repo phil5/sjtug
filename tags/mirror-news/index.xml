@@ -6,10 +6,37 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 10 Feb 2021 13:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Mar 2021 18:40:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增 Bioconductor, openEuler, Void Linux, Wireshark 镜像</title>
+      <link>https://sjtug.org/post/mirror-news/2021-03-06-new-mirrors/</link>
+      <pubDate>Sat, 06 Mar 2021 18:40:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2021-03-06-new-mirrors/</guid>
+      <description>&lt;p&gt;近期，SJTUG 的镜像同步工具 mirror-clone &lt;a href=&#34;https://github.com/sjtug/mirror-clone/pull/57&#34;&gt;添加了 Rsync 支持&lt;/a&gt;。
+在此基础上，我们增加了 Bioconductor, Void Linux 和 Wireshark 镜像。这三个镜像都存储在 SJTU 对象存储服务上。
+从这些软件源下载软件时，您会被自动重定向到 SJTU 对象存储服务。&lt;/p&gt;
+
+&lt;p&gt;我们还增加了 openEuler 镜像，存储在思源 (mirror.sjtu.edu.cn) 服务器上。&lt;/p&gt;
+
+&lt;p&gt;您可以参阅镜像站首页的帮助文档，配置相关软件使用 SJTUG 镜像。&lt;/p&gt;
+
+&lt;p&gt;与此同时，由于致远服务器压力过大，我们将部分软件源迁移到了其他存储中。您可以调整相关软件的设置，以取得最好的使用体验。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;manjaro 迁移到了思源服务器。&lt;/li&gt;
+&lt;li&gt;archlinux 迁移到了思源服务器。&lt;/li&gt;
+&lt;li&gt;ctan 迁移到了思源服务器。&lt;/li&gt;
+&lt;li&gt;anaconda 迁移到了 SJTU 对象存储服务。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家使用。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>镜像站将于2月17日上午8时维护</title>
