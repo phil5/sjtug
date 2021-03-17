@@ -77,7 +77,7 @@ Fedora 项目在建设开源软件社区的同时构建了一个被称为&rdquo;
 
 <p>使用方法：运行下面的指令一键替换并备份。</p>
 
-<pre><code class="language-bash">sed -e 's/metalink/#metalink/g' -e 's|#baseurl=http://download.example/pub/|baseurl=http://mirror.sjtu.edu.cn/|g' -i.bak /etc/yum.repos.d/&lt;需要替换的文件&gt;
+<pre><code class="language-bash">sed -e 's/metalink/#metalink/g' -e 's|#baseurl=http://download.example/pub/|baseurl=https://mirror.sjtu.edu.cn/|g' -i.bak /etc/yum.repos.d/&lt;需要替换的文件&gt;
 </code></pre>
 
 <p>最后运行 <code>dnf makecache</code> 生成缓存</p>

@@ -786,7 +786,7 @@ Fedora 项目在建设开源软件社区的同时构建了一个被称为&amp;rd
 
 &lt;p&gt;使用方法：运行下面的指令一键替换并备份。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -e &#39;s/metalink/#metalink/g&#39; -e &#39;s|#baseurl=http://download.example/pub/|baseurl=http://mirror.sjtu.edu.cn/|g&#39; -i.bak /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -e &#39;s/metalink/#metalink/g&#39; -e &#39;s|#baseurl=http://download.example/pub/|baseurl=https://mirror.sjtu.edu.cn/|g&#39; -i.bak /etc/yum.repos.d/&amp;lt;需要替换的文件&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;最后运行 &lt;code&gt;dnf makecache&lt;/code&gt; 生成缓存&lt;/p&gt;
