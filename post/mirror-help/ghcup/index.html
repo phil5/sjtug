@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>SJTUG例行分享：C11 Memory Model &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>ghcup &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,41 +52,51 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>SJTUG例行分享：C11 Memory Model</h1>
+                    <h1>ghcup</h1>
                     <h2 class="headline">
-                    October 16, 2016 
+                    March 30, 2021 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> hawnzug
+                        <i class="fa fa-user" aria-hidden="true"></i> lightquantum
                     
-                    
-                    <br>
-                     <i class="fa fa-map-marker" aria-hidden="true"></i> Main Library B416 
-                     <i class="fa fa-calendar" aria-hidden="true"></i> 2016-10-16T18:00:00&#43;08:00 
                     
                     <br>
                     
                     
                         
-                            <a href="https://sjtug.org/tags/news">news</a>
-                        
-                            <a href="https://sjtug.org/tags/sharing">sharing</a>
+                            <a href="https://sjtug.org/tags/mirror-help">mirror-help</a>
                         
                     
                     
                     </h2>
                 </header>
-                
-                    <section id = "post-image">
-                        <img src="https://sjtug.org/images/memory-model.png"></img>
-                    </section>
                  
                 <section id="post-body">
-                    <p>10月16日晚18:00，@贾枭 学长在新图B416向大家介绍 C11 Memory Model 的有关知识。</p>
+                    <p>Ghcup 是一种用于安装 Haskell 的工具，它使得用户可以轻易地在 GNU/Linux、macOS 和 FreeBSD 上安装特定版本的 ghc，并从零开始搭建好一个全新的 Haskell 开发环境（包括 cabal 与 HLS 支持）。</p>
 
-<p>视频在 <a href="https://www.liveedu.tv/sjtug/">LiveEdu</a> 可以看到。</p>
+<p><strong>使用说明</strong></p>
 
-<p><strong>分享资料</strong> : <a href="https://github.com/sjtug/sharing/tree/master/2016-10-16">sjtug/sharing</a></p>
+<p>创建 <code>~/.ghcup/config.yaml</code> 并输入以下内容</p>
+
+<pre><code>url-source:
+    OwnSource: &quot;https://mirror.sjtu.edu.cn/ghcup/yaml/ghcup/data/ghcup-0.0.4.yaml&quot;
+</code></pre>
+
+<p>如果您尚未安装 ghcup，请在终端中执行以下指令（请不要以 root 用户执行），随后跟随屏幕上的指引完成安装。</p>
+
+<ul>
+<li>如果您运行的是 Linux, macOS (Intel), FreeBSD 或 WSL，请执行</li>
+</ul>
+
+<pre><code>curl --proto '=https' --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | sh
+</code></pre>
+
+<ul>
+<li>如果您运行的是 macOS (Apple 芯片) 请执行</li>
+</ul>
+
+<pre><code>curl --proto '=https' --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | arch -x86_64 /bin/bash
+</code></pre>
 
                 </section>
             </article>
@@ -99,7 +109,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2f2016-10-16-c11-memory-model%2f - SJTUG%e4%be%8b%e8%a1%8c%e5%88%86%e4%ba%ab%ef%bc%9aC11%20Memory%20Model by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-help%2fghcup%2f - ghcup by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

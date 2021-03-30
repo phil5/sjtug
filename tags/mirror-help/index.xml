@@ -6,10 +6,44 @@
     <description>Recent content in Mirror Help on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 22 Feb 2021 11:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Mar 2021 23:50:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-help/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ghcup</title>
+      <link>https://sjtug.org/post/mirror-help/ghcup/</link>
+      <pubDate>Tue, 30 Mar 2021 23:50:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/ghcup/</guid>
+      <description>&lt;p&gt;Ghcup 是一种用于安装 Haskell 的工具，它使得用户可以轻易地在 GNU/Linux、macOS 和 FreeBSD 上安装特定版本的 ghc，并从零开始搭建好一个全新的 Haskell 开发环境（包括 cabal 与 HLS 支持）。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;使用说明&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;创建 &lt;code&gt;~/.ghcup/config.yaml&lt;/code&gt; 并输入以下内容&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;url-source:
+    OwnSource: &amp;quot;https://mirror.sjtu.edu.cn/ghcup/yaml/ghcup/data/ghcup-0.0.4.yaml&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果您尚未安装 ghcup，请在终端中执行以下指令（请不要以 root 用户执行），随后跟随屏幕上的指引完成安装。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;如果您运行的是 Linux, macOS (Intel), FreeBSD 或 WSL，请执行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;如果您运行的是 macOS (Apple 芯片) 请执行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | arch -x86_64 /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>qt</title>
