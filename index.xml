@@ -6,10 +6,25 @@
     <description>Recent content on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 30 Mar 2021 23:50:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Apr 2021 17:44:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>alpine</title>
+      <link>https://sjtug.org/post/mirror-help/alpine/</link>
+      <pubDate>Sat, 17 Apr 2021 17:44:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-help/alpine/</guid>
+      <description>&lt;p&gt;Alpine Linux 是一个面向安全，轻量级的基于musl libc与busybox项目的Linux发行版。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/dl-cdn.alpinelinux.org/mirrors.sjtug.sjtu.edu.cn/alpine/g&#39; /etc/apk/repositories
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ghcup</title>
