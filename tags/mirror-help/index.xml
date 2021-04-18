@@ -1130,8 +1130,10 @@ git remote set-url origin https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.gi
 
 &lt;p&gt;执行以下语句或加入到&lt;code&gt;~/.bashrc&lt;/code&gt;中。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.sjtug.sjtu.edu.cn/homebrew-bottles
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.sjtug.sjtu.edu.cn/homebrew-bottles/bottles
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;SJTUG 镜像现已支持 ghcr.io 的 bottles 同步。&lt;/p&gt;
 </description>
     </item>
     
