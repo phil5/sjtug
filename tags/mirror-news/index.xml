@@ -6,10 +6,39 @@
     <description>Recent content in Mirror News on SJTUG - A Joyful Techie User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 23 Mar 2021 14:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 14:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://sjtug.org/tags/mirror-news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新增 AlmaLinux, Armbian, Fedora development, ghcup, Linux kernel, Rocky Linux 镜像</title>
+      <link>https://sjtug.org/post/mirror-news/2021-05-25-new-mirrors/</link>
+      <pubDate>Tue, 25 May 2021 14:00:00 +0800</pubDate>
+      
+      <guid>https://sjtug.org/post/mirror-news/2021-05-25-new-mirrors/</guid>
+      <description>&lt;p&gt;SJTUG 软件源镜像在近期添加了一批新的镜像源。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;添加 ghcup 镜像。&lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/225&#34;&gt;PR#225&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;添加 Armbian 和 AlmaLinux 镜像 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/227&#34;&gt;PR#227&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;添加 Linux kernel 镜像 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/228&#34;&gt;PR#228&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;添加了 Fedora development 镜像 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/236&#34;&gt;PR#236&lt;/a&gt; &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/238&#34;&gt;PR#238&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;添加了 Rocky Linux 镜像 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/246&#34;&gt;PR#246&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;与此同时，我们也做了一些功能上的更新：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Homebrew 支持从 ghcr.io 同步。 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/245&#34;&gt;PR#245&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rsync 的磁盘限制大大减小，可以为下游提供文件同步服务了。 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/240&#34;&gt;PR#240&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;git 源切换到了 git.sjtu.edu.cn 提供服务，用户体验更好。 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/249&#34;&gt;PR#249&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Caddy Web Server 升级到了 2.4.0。 &lt;a href=&#34;https://github.com/sjtug/mirror-docker-unified/pull/248&#34;&gt;PR#248&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家使用。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>新增 conda-forge/osx-arm64, GIMP, MacPorts, VSCodium 镜像</title>

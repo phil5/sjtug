@@ -7,7 +7,7 @@
 		<meta name="author" content="SJTUG">
 		<meta name="description" content="SJTU *NIX User Group">
 		<meta name="generator" content="Hugo 0.37.1" />
-		<title>SJTUG Demo镜像源成立 &middot; SJTUG - A Joyful Techie User Group</title>
+		<title>新增 AlmaLinux, Armbian, Fedora development, ghcup, Linux kernel, Rocky Linux 镜像 &middot; SJTUG - A Joyful Techie User Group</title>
 		<link rel="shortcut icon" href="https://sjtug.org/images/favicon.ico">
 		<link rel="stylesheet" href="https://sjtug.org/css/style.css">
 		<link rel="stylesheet" href="https://sjtug.org/css/highlight.css">
@@ -52,12 +52,12 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>SJTUG Demo镜像源成立</h1>
+                    <h1>新增 AlmaLinux, Armbian, Fedora development, ghcup, Linux kernel, Rocky Linux 镜像</h1>
                     <h2 class="headline">
-                    March 17, 2016 
+                    May 25, 2021 
                     
                         <br>
-                        <i class="fa fa-user" aria-hidden="true"></i> htfy96
+                        <i class="fa fa-user" aria-hidden="true"></i> skyzh
                     
                     
                     <br>
@@ -72,7 +72,27 @@
                 </header>
                  
                 <section id="post-body">
-                    
+                    <p>SJTUG 软件源镜像在近期添加了一批新的镜像源。</p>
+
+<ul>
+<li>添加 ghcup 镜像。<a href="https://github.com/sjtug/mirror-docker-unified/pull/225">PR#225</a></li>
+<li>添加 Armbian 和 AlmaLinux 镜像 <a href="https://github.com/sjtug/mirror-docker-unified/pull/227">PR#227</a></li>
+<li>添加 Linux kernel 镜像 <a href="https://github.com/sjtug/mirror-docker-unified/pull/228">PR#228</a></li>
+<li>添加了 Fedora development 镜像 <a href="https://github.com/sjtug/mirror-docker-unified/pull/236">PR#236</a> <a href="https://github.com/sjtug/mirror-docker-unified/pull/238">PR#238</a></li>
+<li>添加了 Rocky Linux 镜像 <a href="https://github.com/sjtug/mirror-docker-unified/pull/246">PR#246</a></li>
+</ul>
+
+<p>与此同时，我们也做了一些功能上的更新：</p>
+
+<ul>
+<li>Homebrew 支持从 ghcr.io 同步。 <a href="https://github.com/sjtug/mirror-docker-unified/pull/245">PR#245</a></li>
+<li>Rsync 的磁盘限制大大减小，可以为下游提供文件同步服务了。 <a href="https://github.com/sjtug/mirror-docker-unified/pull/240">PR#240</a></li>
+<li>git 源切换到了 git.sjtu.edu.cn 提供服务，用户体验更好。 <a href="https://github.com/sjtug/mirror-docker-unified/pull/249">PR#249</a></li>
+<li>Caddy Web Server 升级到了 2.4.0。 <a href="https://github.com/sjtug/mirror-docker-unified/pull/248">PR#248</a></li>
+</ul>
+
+<p>欢迎大家使用。</p>
+
                 </section>
             </article>
             <footer id="post-meta" class="clearfix">
@@ -84,7 +104,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-news%2f2016-03-17-established%2f - SJTUG%20Demo%e9%95%9c%e5%83%8f%e6%ba%90%e6%88%90%e7%ab%8b by @sjtug"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fsjtug.org%2fpost%2fmirror-news%2f2021-05-25-new-mirrors%2f - %e6%96%b0%e5%a2%9e%20AlmaLinux%2c%20Armbian%2c%20Fedora%20development%2c%20ghcup%2c%20Linux%20kernel%2c%20Rocky%20Linux%20%e9%95%9c%e5%83%8f by @sjtug"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
