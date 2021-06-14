@@ -68,10 +68,10 @@
 &lt;p&gt;创建 &lt;code&gt;~/.ghcup/config.yaml&lt;/code&gt; 并输入以下内容&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;url-source:
-    OwnSource: &amp;quot;https://mirror.sjtu.edu.cn/ghcup/yaml/ghcup/data/ghcup-0.0.4.yaml&amp;quot;
+    OwnSource: &amp;quot;https://mirror.sjtu.edu.cn/ghcup/yaml/ghcup/data/ghcup-0.0.5.yaml&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;如果您尚未安装 ghcup，请在终端中执行以下指令（请不要以 root 用户执行），随后跟随屏幕上的指引完成安装。&lt;/p&gt;
+&lt;p&gt;如果您尚未安装 ghcup，请在完成以上步骤后，于终端中执行以下指令（请不要以 root 用户执行），随后跟随屏幕上的指引完成安装。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;如果您运行的是 Linux, macOS (Intel), FreeBSD 或 WSL，请执行&lt;/li&gt;
@@ -86,6 +86,28 @@
 
 &lt;pre&gt;&lt;code&gt;curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | arch -x86_64 /bin/bash
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;故障排除&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ghcup 出现形如 &lt;code&gt;[ Error ] JSON decoding failed with: AesonException&lt;/code&gt; 的错误&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这可能是由于本机 ghcup 版本与配置文件版本不匹配造成。
+ghcup 于 0.1.15.1 版本前使用 0.0.4 版本的配置文件，此版本及之后的版本使用 0.0.5 版本的配置文件。
+请尝试将 &lt;code&gt;config.yaml&lt;/code&gt; 中的 &lt;code&gt;ghcup-0.0.5.yaml&lt;/code&gt; 改为 &lt;code&gt;ghcup-0.0.4.yaml&lt;/code&gt; （抑或反之）后重试。&lt;/p&gt;
+
+&lt;p&gt;请注意，ghcup 上游倾向于仅更新最新版本配置文件中的内容，当版本发生变化后请及时更新配置文件版本。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;通过 ghcup 安装软件包时出现 &lt;code&gt;Error: Download failed ...&lt;/code&gt; 错误&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这一错误可能是由于您的 ghcup 版本过老，使用的配置文件已经长久未更新，其中包含的软件包版本过旧所致。我们将尽力保留旧版本的软件包，但当存储空间不足时，可能随时删除旧文件。本镜像站仅保证同步最新版本配置文件中包含的软件包。&lt;/p&gt;
+
+&lt;p&gt;当出现上述现象时，请首先尝试更新 ghcup 的版本，并根据 &lt;code&gt;故障排除 1&lt;/code&gt; 的指示修改配置文件。若 ghcup 已无法更新，可以尝试删除 &lt;code&gt;~/.ghcup&lt;/code&gt; 整个文件夹（这一操作将删除 ghcup 以及所有通过 ghcup 安装的软件），并根据 &lt;code&gt;使用说明&lt;/code&gt; 重新安装最新版本的 ghcup。&lt;/p&gt;
+
+&lt;p&gt;若完成以上步骤后问题仍未解决，请至 &lt;a href=&#34;https://github.com/sjtug/mirror-requests&#34;&gt;此处&lt;/a&gt; 向我们反馈 BUG。&lt;/p&gt;
 </description>
     </item>
     
